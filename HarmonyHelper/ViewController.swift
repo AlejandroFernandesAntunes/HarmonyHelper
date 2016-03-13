@@ -37,5 +37,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     // MARK: Actions
+    @IBAction func addChordToSequence(sender: UIButton) {
+        sequenceLbl.text = "algo"
+    }
 }
 

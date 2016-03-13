@@ -34,6 +34,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-EU-HkN">
                                         <rect key="frame" x="220" y="80" width="160" height="30"/>
                                         <state key="normal" title="Add chord to sequence"/>
+                                        <connections>
+                                            <action selector="addChordToSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppl-O1-Hhe"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8">
                                         <rect key="frame" x="262" y="126" width="77" height="21"/>
