@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DAA75B11C95A85E00A5F456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA75B01C95A85E00A5F456 /* AppDelegate.swift */; };
+		1DAA75B31C95A85E00A5F456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA75B21C95A85E00A5F456 /* ViewController.swift */; };
+		1DAA75B61C95A85E00A5F456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA75B41C95A85E00A5F456 /* Main.storyboard */; };
+		1DAA75B81C95A85E00A5F456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA75B71C95A85E00A5F456 /* Assets.xcassets */; };
+		1DAA75BB1C95A85E00A5F456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA75B91C95A85E00A5F456 /* LaunchScreen.storyboard */; };
+		1DAA75C61C95A85E00A5F456 /* HarmonyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA75C51C95A85E00A5F456 /* HarmonyHelperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DAA75C21C95A85E00A5F456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DAA75A51C95A85E00A5F456 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DAA75AC1C95A85E00A5F456;
+			remoteInfo = HarmonyHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DAA75AD1C95A85E00A5F456 /* HarmonyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarmonyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAA75B01C95A85E00A5F456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DAA75B21C95A85E00A5F456 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DAA75B51C95A85E00A5F456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DAA75B71C95A85E00A5F456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DAA75BA1C95A85E00A5F456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DAA75BC1C95A85E00A5F456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DAA75C11C95A85E00A5F456 /* HarmonyHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarmonyHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAA75C51C95A85E00A5F456 /* HarmonyHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyHelperTests.swift; sourceTree = "<group>"; };
+		1DAA75C71C95A85E00A5F456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DAA75AA1C95A85E00A5F456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA75BE1C95A85E00A5F456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DAA75A41C95A85E00A5F456 = {
+			isa = PBXGroup;
+			children = (
+				1DAA75AF1C95A85E00A5F456 /* HarmonyHelper */,
+				1DAA75C41C95A85E00A5F456 /* HarmonyHelperTests */,
+				1DAA75AE1C95A85E00A5F456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DAA75AE1C95A85E00A5F456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DAA75AD1C95A85E00A5F456 /* HarmonyHelper.app */,
+				1DAA75C11C95A85E00A5F456 /* HarmonyHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DAA75AF1C95A85E00A5F456 /* HarmonyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1DAA75B01C95A85E00A5F456 /* AppDelegate.swift */,
+				1DAA75B21C95A85E00A5F456 /* ViewController.swift */,
+				1DAA75B41C95A85E00A5F456 /* Main.storyboard */,
+				1DAA75B71C95A85E00A5F456 /* Assets.xcassets */,
+				1DAA75B91C95A85E00A5F456 /* LaunchScreen.storyboard */,
+				1DAA75BC1C95A85E00A5F456 /* Info.plist */,
+			);
+			path = HarmonyHelper;
+			sourceTree = "<group>";
+		};
+		1DAA75C41C95A85E00A5F456 /* HarmonyHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DAA75C51C95A85E00A5F456 /* HarmonyHelperTests.swift */,
+				1DAA75C71C95A85E00A5F456 /* Info.plist */,
+			);
+			path = HarmonyHelperTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DAA75AC1C95A85E00A5F456 /* HarmonyHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAA75CA1C95A85E00A5F456 /* Build configuration list for PBXNativeTarget "HarmonyHelper" */;
+			buildPhases = (
+				1DAA75A91C95A85E00A5F456 /* Sources */,
+				1DAA75AA1C95A85E00A5F456 /* Frameworks */,
+				1DAA75AB1C95A85E00A5F456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HarmonyHelper;
+			productName = HarmonyHelper;
+			productReference = 1DAA75AD1C95A85E00A5F456 /* HarmonyHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DAA75C01C95A85E00A5F456 /* HarmonyHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAA75CD1C95A85E00A5F456 /* Build configuration list for PBXNativeTarget "HarmonyHelperTests" */;
+			buildPhases = (
+				1DAA75BD1C95A85E00A5F456 /* Sources */,
+				1DAA75BE1C95A85E00A5F456 /* Frameworks */,
+				1DAA75BF1C95A85E00A5F456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DAA75C31C95A85E00A5F456 /* PBXTargetDependency */,
+			);
+			name = HarmonyHelperTests;
+			productName = HarmonyHelperTests;
+			productReference = 1DAA75C11C95A85E00A5F456 /* HarmonyHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DAA75A51C95A85E00A5F456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ale Fernandes Antunes";
+				TargetAttributes = {
+					1DAA75AC1C95A85E00A5F456 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					1DAA75C01C95A85E00A5F456 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1DAA75AC1C95A85E00A5F456;
+					};
+				};
+			};
+			buildConfigurationList = 1DAA75A81C95A85E00A5F456 /* Build configuration list for PBXProject "HarmonyHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DAA75A41C95A85E00A5F456;
+			productRefGroup = 1DAA75AE1C95A85E00A5F456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DAA75AC1C95A85E00A5F456 /* HarmonyHelper */,
+				1DAA75C01C95A85E00A5F456 /* HarmonyHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DAA75AB1C95A85E00A5F456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DAA75BB1C95A85E00A5F456 /* LaunchScreen.storyboard in Resources */,
+				1DAA75B81C95A85E00A5F456 /* Assets.xcassets in Resources */,
+				1DAA75B61C95A85E00A5F456 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA75BF1C95A85E00A5F456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DAA75A91C95A85E00A5F456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DAA75B31C95A85E00A5F456 /* ViewController.swift in Sources */,
+				1DAA75B11C95A85E00A5F456 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA75BD1C95A85E00A5F456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DAA75C61C95A85E00A5F456 /* HarmonyHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DAA75C31C95A85E00A5F456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DAA75AC1C95A85E00A5F456 /* HarmonyHelper */;
+			targetProxy = 1DAA75C21C95A85E00A5F456 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DAA75B41C95A85E00A5F456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DAA75B51C95A85E00A5F456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DAA75B91C95A85E00A5F456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DAA75BA1C95A85E00A5F456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DAA75C81C95A85E00A5F456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DAA75C91C95A85E00A5F456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DAA75CB1C95A85E00A5F456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HarmonyHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ale.HarmonyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1DAA75CC1C95A85E00A5F456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HarmonyHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ale.HarmonyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1DAA75CE1C95A85E00A5F456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HarmonyHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ale.HarmonyHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarmonyHelper.app/HarmonyHelper";
+			};
+			name = Debug;
+		};
+		1DAA75CF1C95A85E00A5F456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HarmonyHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ale.HarmonyHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarmonyHelper.app/HarmonyHelper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DAA75A81C95A85E00A5F456 /* Build configuration list for PBXProject "HarmonyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAA75C81C95A85E00A5F456 /* Debug */,
+				1DAA75C91C95A85E00A5F456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DAA75CA1C95A85E00A5F456 /* Build configuration list for PBXNativeTarget "HarmonyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAA75CB1C95A85E00A5F456 /* Debug */,
+				1DAA75CC1C95A85E00A5F456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1DAA75CD1C95A85E00A5F456 /* Build configuration list for PBXNativeTarget "HarmonyHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAA75CE1C95A85E00A5F456 /* Debug */,
+				1DAA75CF1C95A85E00A5F456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DAA75A51C95A85E00A5F456 /* Project object */;
+}
