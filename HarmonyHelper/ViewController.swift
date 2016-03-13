@@ -10,35 +10,40 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    // MARK: Properties
-    @IBOutlet weak var sequenceLbl: UILabel!
-    @IBOutlet weak var analysisLbl: UILabel!
-    @IBOutlet weak var txtChord: UITextField!
+  // MARK: Properties
+  @IBOutlet weak var sequenceLbl: UILabel!
+  @IBOutlet weak var analysisLbl: UILabel!
+  @IBOutlet weak var txtChord: UITextField!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        txtChord.delegate = self
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    txtChord.delegate = self
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
+  
+  func addChord(newText: String) {
+    if(sequenceLbl.text == "Sequence") {
+      sequenceLbl.text = ""
     }
+    sequenceLbl.text =  sequenceLbl.text! + " " + newText
+  }
     
-    // MARK: UITextFieldDelegate
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        //Hide the keyboard
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidEndEditing(textField: UITextField) {
-        sequenceLbl.text = textField.text
-    }
-
-    // MARK: Actions
-    @IBAction func addChordToSequence(sender: UIButton) {
-        sequenceLbl.text = "algo"
-    }
+  // MARK: UITextFieldDelegate
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    //Hide the keyboard
+    textField.resignFirstResponder()
+    return true
+  }
+  
+  func textFieldDidEndEditing(textField: UITextField) {
+    addChord(textField.text!)
+  }
+  // MARK: Actions
+  @IBAction func addChordToSequence(sender: UIButton) {
+    addChord(txtChord.text!)
+  }
 }
 
