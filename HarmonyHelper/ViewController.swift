@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
+  let sequence_placeHolder = "Sequence"
   // MARK: Properties
   @IBOutlet weak var sequenceLbl: UILabel!
   @IBOutlet weak var analysisLbl: UILabel!
@@ -25,10 +25,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
   }
   
   func addChord(newText: String) {
-    if(sequenceLbl.text == "Sequence") {
+    if(sequenceLbl.text == sequence_placeHolder) {
       sequenceLbl.text = ""
     }
     sequenceLbl.text =  sequenceLbl.text! + " " + newText
+  }
+    
+  func removeLastChord() {
+   if(sequenceLbl.text != sequence_placeHolder) {
+    if(sequenceLbl.text?.characters.count > 2){
+     sequenceLbl.text = sequenceLbl.text?.substringToIndex(sequenceLbl.text!.endIndex.advancedBy(-3))
+    } else {
+     sequenceLbl.text = sequence_placeHolder
+    }
+   }
+   
+   if(sequenceLbl.text?.characters.count == 0) {
+    sequenceLbl.text=sequence_placeHolder
+   }
   }
     
   // MARK: UITextFieldDelegate
@@ -44,6 +58,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
   // MARK: Actions
   @IBAction func addChordToSequence(sender: UIButton) {
     addChord(txtChord.text!)
+  }
+    
+  @IBAction func removeLastChordFromSequence(sender: UIButton) {
+    removeLastChord()
   }
 }
 

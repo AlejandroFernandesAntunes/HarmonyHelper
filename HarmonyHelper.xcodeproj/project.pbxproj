@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		1DAA75AD1C95A85E00A5F456 /* HarmonyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarmonyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAA75B01C95A85E00A5F456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DAA75B21C95A85E00A5F456 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		1DAA75B21C95A85E00A5F456 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 1; };
 		1DAA75B51C95A85E00A5F456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DAA75B71C95A85E00A5F456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DAA75BA1C95A85E00A5F456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -395,6 +395,7 @@
 				1DAA75CC1C95A85E00A5F456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DAA75CD1C95A85E00A5F456 /* Build configuration list for PBXNativeTarget "HarmonyHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +404,7 @@
 				1DAA75CF1C95A85E00A5F456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
