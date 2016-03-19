@@ -8,79 +8,77 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
-  let sequence_placeHolder = "Sequence"
-  let analysis_placeHolder = "Analysis"
-  var chordtoAdd = ""
-  var last_chord_added = ""
-  var avaiable_chords = [
-    "CMaj7",
-    "C7",
-    "Cmin",
-    "Cdim",
-   "C#Maj7",
-   "C#7",
-   "C#min",
-   "C#dim",
-   "DMaj7",
-   "D7",
-   "Dmin",
-   "Ddim",
-   "D#Maj7",
-   "D#7",
-   "D#min",
-   "D#dim",
-   "EMaj7",
-   "E7",
-   "Emin",
-   "Edim",
-   "FMaj7",
-   "F7",
-   "Fmin",
-   "Fdim",
-   "F#Maj7",
-   "F#7",
-   "F#min",
-   "F#dim",
-   "GMaj7",
-   "G7",
-   "Gmin",
-   "Gdim",
-   "G#Maj7",
-   "G#7",
-   "G#min",
-   "G#dim",
-   "AMaj7",
-   "A7",
-   "Amin",
-   "Adim",
-   "A#Maj7",
-   "A#7",
-   "A#min",
-   "A#dim",
-   "BMaj7",
-   "B7",
-   "Bmin",
-   "Bdim"
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+ let sequence_placeHolder = "Sequence"
+ let analysis_placeHolder = "Analysis"
+ var chordtoAdd = ""
+ var last_chord_added = ""
+ var avaiable_chords = [
+  "CMaj7",
+  "C7",
+  "Cmin",
+  "Cdim",
+  "C#Maj7",
+  "C#7",
+  "C#min",
+  "C#dim",
+  "DMaj7",
+  "D7",
+  "Dmin",
+  "Ddim",
+  "D#Maj7",
+  "D#7",
+  "D#min",
+  "D#dim",
+  "EMaj7",
+  "E7",
+  "Emin",
+  "Edim",
+  "FMaj7",
+  "F7",
+  "Fmin",
+  "Fdim",
+  "F#Maj7",
+  "F#7",
+  "F#min",
+  "F#dim",
+  "GMaj7",
+  "G7",
+  "Gmin",
+  "Gdim",
+  "G#Maj7",
+  "G#7",
+  "G#min",
+  "G#dim",
+  "AMaj7",
+  "A7",
+  "Amin",
+  "Adim",
+  "A#Maj7",
+  "A#7",
+  "A#min",
+  "A#dim",
+  "BMaj7",
+  "B7",
+  "Bmin",
+  "Bdim"
  ]
  
-  // MARK: Properties
-  @IBOutlet weak var sequenceLbl: UILabel!
-  @IBOutlet weak var analysisLbl: UILabel!
-  @IBOutlet weak var txtChord: UITextField!
-  @IBOutlet weak var chordsPicker: UIPickerView!
+ // MARK: Properties
+ @IBOutlet weak var sequenceLbl: UILabel!
+ @IBOutlet weak var analysisLbl: UILabel!
+ @IBOutlet weak var chordsPicker: UIPickerView!
  
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    txtChord.delegate = self
-    chordsPicker.dataSource = self;
-    chordsPicker.delegate = self;
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-  }
+ 
+ override func viewDidLoad() {
+  super.viewDidLoad()
+  chordsPicker.dataSource = self;
+  chordsPicker.delegate = self;
+ }
+ 
+ override func didReceiveMemoryWarning() {
+  super.didReceiveMemoryWarning()
+ }
  
  func analyzeSequence() {
   var harmonized_tones = [String: [String]]()
@@ -174,82 +172,70 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
   
   let sequence = sequenceLbl.text
   let sequenceArr = sequence!.characters.split{$0 == " "}.map(String.init)
-
+  
   if (sequence != sequence_placeHolder) {
    for tone:String in tones {
-     let harmonized:[String]? = harmonized_tones[tone]
-       if(harmonized != nil) {
-        for grade:String in harmonized!{
-         if sequenceArr.contains(grade) {
-          coincidences[tone] = coincidences[tone]! + 1
-         }
-        }
+    let harmonized:[String]? = harmonized_tones[tone]
+    if(harmonized != nil) {
+     for grade:String in harmonized!{
+      if sequenceArr.contains(grade) {
+       coincidences[tone] = coincidences[tone]! + 1
       }
-    }
-  }
- 
- 
-   // The one that has the more coincidence will be the tone it's on
-   let maxim = coincidences.values.maxElement()
-   var founded:String = ""
-   if(maxim == 0) {
-    founded = analysis_placeHolder
-   } else {
-    for (key, value) in coincidences {
-     if (value == maxim)
-     {
-      founded =  founded + " " + key
      }
     }
    }
+  }
+  
+  
+  // The one that has the more coincidence will be the tone it's on
+  let maxim = coincidences.values.maxElement()
+  var founded:String = ""
+  if(maxim == 0) {
+   founded = analysis_placeHolder
+  } else {
+   for (key, value) in coincidences {
+    if (value == maxim)
+    {
+     founded =  founded + " " + key
+    }
+   }
+  }
   analysisLbl.text = founded
  }
-
+ 
  //TODO Make sequence an array
-  func addChord(newText: String) {
-    if(sequenceLbl.text == sequence_placeHolder) {
-      sequenceLbl.text = ""
-    }
-    sequenceLbl.text =  sequenceLbl.text! + " " + newText
-   last_chord_added = newText
-    analyzeSequence()
+ func addChord(newText: String) {
+  if(sequenceLbl.text == sequence_placeHolder) {
+   sequenceLbl.text = ""
   }
-    
-  func removeLastChord() {
-   if(sequenceLbl.text != sequence_placeHolder) {
-    if(sequenceLbl.text?.characters.count > 2){
-     sequenceLbl.text = sequenceLbl.text?.substringToIndex(
-      sequenceLbl.text!.endIndex.advancedBy((last_chord_added.characters.count * -1))
-     )
-    } else {
-     sequenceLbl.text = sequence_placeHolder
-    }
-   }
-   
-   if(sequenceLbl.text?.characters.count == 0) {
-    sequenceLbl.text=sequence_placeHolder
+  sequenceLbl.text =  sequenceLbl.text! + " " + newText
+  last_chord_added = newText
+  analyzeSequence()
+ }
+ 
+ func removeLastChord() {
+  if(sequenceLbl.text != sequence_placeHolder) {
+   if(sequenceLbl.text?.characters.count > 2 && sequenceLbl.text != sequence_placeHolder){
+    sequenceLbl.text = sequenceLbl.text?.substringToIndex(
+     sequenceLbl.text!.endIndex.advancedBy((last_chord_added.characters.count * -1))
+    )
    } else {
-     analyzeSequence()
+    sequenceLbl.text = sequence_placeHolder
    }
   }
- 
- 
-  // MARK: UITextFieldDelegate
-  func textFieldShouldReturn(textField: UITextField) -> Bool {
-    //Hide the keyboard
-    textField.resignFirstResponder()
-    return true
+  
+  if(sequenceLbl.text?.characters.count == 0) {
+   sequenceLbl.text=sequence_placeHolder
+  } else {
+   analyzeSequence()
   }
+ }
  
  // MARK: UIPickerViewDataSource Delegate
  
  func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
   return 1
  }
- 
- /* func pickerView(pickerView: UIPickerView, numberOfRowsInComponent: component) {
- return colors.count
- }*/
  
  func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
   return avaiable_chords.count
@@ -260,23 +246,20 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
  func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
   return avaiable_chords[row]
  }
-  //this is call when picker view option is selected
+ //this is call when picker view option is selected
  func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
   chordtoAdd = avaiable_chords[row]
  }
  
-  func textFieldDidEndEditing(textField: UITextField) {
-    addChord(textField.text!)
+ // MARK: Actions
+ @IBAction func addChordToSequence(sender: UIButton) {
+  if(chordtoAdd.characters.count > 0) {
+   addChord(chordtoAdd)
   }
-  // MARK: Actions
-  @IBAction func addChordToSequence(sender: UIButton) {
-   if(chordtoAdd.characters.count > 0) {
-    addChord(chordtoAdd)
-   }
-  }
-    
-  @IBAction func removeLastChordFromSequence(sender: UIButton) {
-    removeLastChord()
-  }
+ }
+ 
+ @IBAction func removeLastChordFromSequence(sender: UIButton) {
+  removeLastChord()
+ }
 }
 
