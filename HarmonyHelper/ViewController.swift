@@ -8,6 +8,7 @@
 
 import UIKit
 
+<<<<<<< HEAD
 class ViewController: UIViewController, UITextFieldDelegate {
   let sequence_placeHolder = "Sequence"
   let analysis_placeHolder = "Analysis"
@@ -135,41 +136,257 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     sequenceLbl.text =  sequenceLbl.text! + " " + newText
     analyzeSequence()
-  }
-    
-  func removeLastChord() {
-   if(sequenceLbl.text != sequence_placeHolder) {
-    if(sequenceLbl.text?.characters.count > 2){
-     sequenceLbl.text = sequenceLbl.text?.substringToIndex(sequenceLbl.text!.endIndex.advancedBy(-3))
-    } else {
-     sequenceLbl.text = sequence_placeHolder
+=======
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+ let sequence_placeHolder = "Sequence"
+ let analysis_placeHolder = "Analysis"
+ var chordtoAdd = ""
+ var addedChords:[String] = []
+ var avaiable_chords = [
+  "CMaj7",
+  "C7",
+  "Cmin",
+  "Cdim",
+  "C#Maj7",
+  "C#7",
+  "C#min",
+  "C#dim",
+  "DMaj7",
+  "D7",
+  "Dmin",
+  "Ddim",
+  "D#Maj7",
+  "D#7",
+  "D#min",
+  "D#dim",
+  "EMaj7",
+  "E7",
+  "Emin",
+  "Edim",
+  "FMaj7",
+  "F7",
+  "Fmin",
+  "Fdim",
+  "F#Maj7",
+  "F#7",
+  "F#min",
+  "F#dim",
+  "GMaj7",
+  "G7",
+  "Gmin",
+  "Gdim",
+  "G#Maj7",
+  "G#7",
+  "G#min",
+  "G#dim",
+  "AMaj7",
+  "A7",
+  "Amin",
+  "Adim",
+  "A#Maj7",
+  "A#7",
+  "A#min",
+  "A#dim",
+  "BMaj7",
+  "B7",
+  "Bmin",
+  "Bdim"
+ ]
+ 
+ // MARK: Properties
+ @IBOutlet weak var sequenceLbl: UILabel!
+ @IBOutlet weak var analysisLbl: UILabel!
+ @IBOutlet weak var chordsPicker: UIPickerView!
+ 
+ 
+ override func viewDidLoad() {
+  super.viewDidLoad()
+  chordsPicker.dataSource = self;
+  chordsPicker.delegate = self;
+ }
+ 
+ override func didReceiveMemoryWarning() {
+  super.didReceiveMemoryWarning()
+ }
+ 
+ func analyzeSequence() {
+  var harmonized_tones = [String: [String]]()
+  
+  let tones = ["C", "C#","D","D#","E", "F", "F#", "G", "G#", "A", "A#", "B"]
+  
+  var coincidences = [String:Int]()
+  coincidences["C"] = 0
+  coincidences["C#"] = 0
+  coincidences["D"] = 0
+  coincidences["D#"] = 0
+  coincidences["E"] = 0
+  coincidences["F"] = 0
+  coincidences["F#"] = 0
+  coincidences["G"] = 0
+  coincidences["A"] = 0
+  coincidences["B"] = 0
+  
+  // harmonizations
+  var c = [String]()
+  c.append("CMaj7")
+  c.append("Dmin7")
+  c.append("Emin7")
+  c.append("FMaj7")
+  c.append("G7")
+  c.append("Amin")
+  c.append("Bdim")
+  harmonized_tones["C"] = c
+  
+  var d = [String]()
+  d.append("C#dim")
+  d.append("DMaj7")
+  d.append("Emin7")
+  d.append("Fmin7")
+  d.append("G#Maj7")
+  d.append("A7")
+  d.append("Bmin")
+  harmonized_tones["D"] = d
+  
+  
+  var e = [String]()
+  e.append("C#min")
+  e.append("D#dim")
+  e.append("EMaj7")
+  e.append("Fmin7")
+  e.append("G#min7")
+  e.append("A#Maj7")
+  e.append("B7")
+  harmonized_tones["E"] = e
+  
+  var f = [String]()
+  f.append("C7")
+  f.append("Dmin")
+  f.append("Edim")
+  f.append("FMaj7")
+  f.append("Gmin")
+  f.append("Amin")
+  f.append("BbMaj7")
+  harmonized_tones["F"] = f
+  
+  var g = [String]()
+  g.append("C#Maj7")
+  g.append("D7")
+  g.append("Emin")
+  g.append("F#dim")
+  g.append("GMaj7")
+  g.append("Amin")
+  g.append("Bmin")
+  harmonized_tones["G"] = g
+  
+  var a = [String]()
+  a.append("C#min")
+  a.append("D#Maj7")
+  a.append("E7")
+  a.append("F#min")
+  a.append("G#dim")
+  a.append("AMaj7")
+  a.append("Bmin")
+  harmonized_tones["A"] = a
+  
+  var b = [String]()
+  b.append("C#min")
+  b.append("D#min")
+  b.append("E#Maj7")
+  b.append("F#7")
+  b.append("G#min")
+  b.append("A#dim")
+  b.append("BMaj7")
+  harmonized_tones["B"] = b
+  
+  
+  if (addedChords.count > 0) {
+   for tone:String in tones {
+    let harmonized:[String]? = harmonized_tones[tone]
+    if(harmonized != nil) {
+     for grade:String in harmonized!{
+      if addedChords.contains(grade) {
+       coincidences[tone] = coincidences[tone]! + 1
+      }
+     }
     }
    }
+>>>>>>> add_spinner
+  }
+  
+  
+  // The one that has the more coincidence will be the tone it's on
+  let maxim = coincidences.values.maxElement()
+  var founded:String = ""
+  if(maxim == 0) {
+   founded = analysis_placeHolder
+  } else {
+   for (key, value) in coincidences {
+    if (value == maxim)
+    {
+     founded =  founded + " " + key
+    }
+   }
+<<<<<<< HEAD
    
    if(sequenceLbl.text?.characters.count == 0) {
     sequenceLbl.text=sequence_placeHolder
    } else {
      analyzeSequence()
    }
+=======
+>>>>>>> add_spinner
   }
-    
-  // MARK: UITextFieldDelegate
-  func textFieldShouldReturn(textField: UITextField) -> Bool {
-    //Hide the keyboard
-    textField.resignFirstResponder()
-    return true
+  analysisLbl.text = founded
+ }
+ 
+ func addChord(newText: String) {
+  addedChords.append(newText)
+  if(sequenceLbl.text == sequence_placeHolder) {
+   sequenceLbl.text = ""
   }
-  
-  func textFieldDidEndEditing(textField: UITextField) {
-    addChord(textField.text!)
+  sequenceLbl.text =  addedChords.joinWithSeparator("-")
+  analyzeSequence()
+ }
+ 
+ func removeLastChord() {
+  if(addedChords.count > 0) {
+   addedChords.removeLast()
+   sequenceLbl.text =  addedChords.joinWithSeparator("-")
+   analyzeSequence()
+  } else{
+   sequenceLbl.text = sequence_placeHolder
   }
-  // MARK: Actions
-  @IBAction func addChordToSequence(sender: UIButton) {
-    addChord(txtChord.text!)
+ }
+ 
+ // MARK: UIPickerViewDataSource Delegate
+ 
+ func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+  return 1
+ }
+ 
+ func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+  return avaiable_chords.count
+ }
+ 
+ // pragma MARK: UIPickerViewDelegate
+ //this is call when picker view is created
+ func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+  return avaiable_chords[row]
+ }
+ //this is call when picker view option is selected
+ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+  chordtoAdd = avaiable_chords[row]
+ }
+ 
+ // MARK: Actions
+ @IBAction func addChordToSequence(sender: UIButton) {
+  if(chordtoAdd.characters.count > 0) {
+   addChord(chordtoAdd)
   }
-    
-  @IBAction func removeLastChordFromSequence(sender: UIButton) {
-    removeLastChord()
-  }
+ }
+ 
+ @IBAction func removeLastChordFromSequence(sender: UIButton) {
+  removeLastChord()
+ }
 }
 
