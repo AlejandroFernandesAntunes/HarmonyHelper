@@ -8,17 +8,74 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
   let sequence_placeHolder = "Sequence"
   let analysis_placeHolder = "Analysis"
+  var chordtoAdd = ""
+  var last_chord_added = ""
+  var avaiable_chords = [
+    "CMaj7",
+    "C7",
+    "Cmin",
+    "Cdim",
+   "C#Maj7",
+   "C#7",
+   "C#min",
+   "C#dim",
+   "DMaj7",
+   "D7",
+   "Dmin",
+   "Ddim",
+   "D#Maj7",
+   "D#7",
+   "D#min",
+   "D#dim",
+   "EMaj7",
+   "E7",
+   "Emin",
+   "Edim",
+   "FMaj7",
+   "F7",
+   "Fmin",
+   "Fdim",
+   "F#Maj7",
+   "F#7",
+   "F#min",
+   "F#dim",
+   "GMaj7",
+   "G7",
+   "Gmin",
+   "Gdim",
+   "G#Maj7",
+   "G#7",
+   "G#min",
+   "G#dim",
+   "AMaj7",
+   "A7",
+   "Amin",
+   "Adim",
+   "A#Maj7",
+   "A#7",
+   "A#min",
+   "A#dim",
+   "BMaj7",
+   "B7",
+   "Bmin",
+   "Bdim"
+ ]
+ 
   // MARK: Properties
   @IBOutlet weak var sequenceLbl: UILabel!
   @IBOutlet weak var analysisLbl: UILabel!
   @IBOutlet weak var txtChord: UITextField!
+  @IBOutlet weak var chordsPicker: UIPickerView!
+ 
 
   override func viewDidLoad() {
     super.viewDidLoad()
     txtChord.delegate = self
+    chordsPicker.dataSource = self;
+    chordsPicker.delegate = self;
   }
 
   override func didReceiveMemoryWarning() {
@@ -44,55 +101,75 @@ class ViewController: UIViewController, UITextFieldDelegate {
   
   // harmonizations
   var c = [String]()
-  c.append("C")
-  c.append("D")
-  c.append("E")
-  c.append("F")
-  c.append("G")
-  c.append("A")
-  c.append("B")
+  c.append("CMaj7")
+  c.append("Dmin7")
+  c.append("Emin7")
+  c.append("FMaj7")
+  c.append("G7")
+  c.append("Amin")
+  c.append("Bdim")
   harmonized_tones["C"] = c
   
   var d = [String]()
-  d.append("C#")
-  d.append("D")
-  d.append("E")
-  d.append("F")
-  d.append("G#")
-  d.append("A")
-  d.append("B")
+  d.append("C#dim")
+  d.append("DMaj7")
+  d.append("Emin7")
+  d.append("Fmin7")
+  d.append("G#Maj7")
+  d.append("A7")
+  d.append("Bmin")
   harmonized_tones["D"] = d
   
+  
   var e = [String]()
-  e.append("C#")
-  e.append("D#")
-  e.append("E")
-  e.append("F")
-  e.append("G#")
-  e.append("A#")
-  e.append("B")
+  e.append("C#min")
+  e.append("D#dim")
+  e.append("EMaj7")
+  e.append("Fmin7")
+  e.append("G#min7")
+  e.append("A#Maj7")
+  e.append("B7")
   harmonized_tones["E"] = e
   
   var f = [String]()
-  f.append("C")
-  f.append("D")
-  f.append("E")
-  f.append("F")
-  f.append("G")
-  f.append("A")
-  f.append("Bb")
+  f.append("C7")
+  f.append("Dmin")
+  f.append("Edim")
+  f.append("FMaj7")
+  f.append("Gmin")
+  f.append("Amin")
+  f.append("BbMaj7")
   harmonized_tones["F"] = f
   
   var g = [String]()
-  g.append("C#")
-  g.append("D")
-  g.append("E")
-  g.append("F#")
-  g.append("G")
-  g.append("A")
-  g.append("B")
+  g.append("C#Maj7")
+  g.append("D7")
+  g.append("Emin")
+  g.append("F#dim")
+  g.append("GMaj7")
+  g.append("Amin")
+  g.append("Bmin")
   harmonized_tones["G"] = g
   
+  var a = [String]()
+  a.append("C#min")
+  a.append("D#Maj7")
+  a.append("E7")
+  a.append("F#min")
+  a.append("G#dim")
+  a.append("AMaj7")
+  a.append("Bmin")
+  harmonized_tones["A"] = a
+  
+  var b = [String]()
+  b.append("C#min")
+  b.append("D#min")
+  b.append("E#Maj7")
+  b.append("F#7")
+  b.append("G#min")
+  b.append("A#dim")
+  b.append("BMaj7")
+  harmonized_tones["B"] = b
   
   
   let sequence = sequenceLbl.text
@@ -128,19 +205,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
   analysisLbl.text = founded
  }
 
- 
+ //TODO Make sequence an array
   func addChord(newText: String) {
     if(sequenceLbl.text == sequence_placeHolder) {
       sequenceLbl.text = ""
     }
     sequenceLbl.text =  sequenceLbl.text! + " " + newText
+   last_chord_added = newText
     analyzeSequence()
   }
     
   func removeLastChord() {
    if(sequenceLbl.text != sequence_placeHolder) {
     if(sequenceLbl.text?.characters.count > 2){
-     sequenceLbl.text = sequenceLbl.text?.substringToIndex(sequenceLbl.text!.endIndex.advancedBy(-3))
+     sequenceLbl.text = sequenceLbl.text?.substringToIndex(
+      sequenceLbl.text!.endIndex.advancedBy((last_chord_added.characters.count * -1))
+     )
     } else {
      sequenceLbl.text = sequence_placeHolder
     }
@@ -152,20 +232,47 @@ class ViewController: UIViewController, UITextFieldDelegate {
      analyzeSequence()
    }
   }
-    
+ 
+ 
   // MARK: UITextFieldDelegate
   func textFieldShouldReturn(textField: UITextField) -> Bool {
     //Hide the keyboard
     textField.resignFirstResponder()
     return true
   }
-  
+ 
+ // MARK: UIPickerViewDataSource Delegate
+ 
+ func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+  return 1
+ }
+ 
+ /* func pickerView(pickerView: UIPickerView, numberOfRowsInComponent: component) {
+ return colors.count
+ }*/
+ 
+ func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+  return avaiable_chords.count
+ }
+ 
+ // pragma MARK: UIPickerViewDelegate
+ //this is call when picker view is created
+ func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+  return avaiable_chords[row]
+ }
+  //this is call when picker view option is selected
+ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+  chordtoAdd = avaiable_chords[row]
+ }
+ 
   func textFieldDidEndEditing(textField: UITextField) {
     addChord(textField.text!)
   }
   // MARK: Actions
   @IBAction func addChordToSequence(sender: UIButton) {
-    addChord(txtChord.text!)
+   if(chordtoAdd.characters.count > 0) {
+    addChord(chordtoAdd)
+   }
   }
     
   @IBAction func removeLastChordFromSequence(sender: UIButton) {
