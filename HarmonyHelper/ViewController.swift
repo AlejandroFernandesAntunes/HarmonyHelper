@@ -12,7 +12,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  let sequence_placeHolder = "Sequence"
  let analysis_placeHolder = "Analysis"
  var chordtoAdd = ""
- var last_chord_added = ""
+ var addedChords:[String] = []
  var avaiable_chords = [
   "CMaj7",
   "C7",
@@ -170,15 +170,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   harmonized_tones["B"] = b
   
   
-  let sequence = sequenceLbl.text
-  let sequenceArr = sequence!.characters.split{$0 == " "}.map(String.init)
-  
-  if (sequence != sequence_placeHolder) {
+  if (addedChords.count > 0) {
    for tone:String in tones {
     let harmonized:[String]? = harmonized_tones[tone]
     if(harmonized != nil) {
      for grade:String in harmonized!{
-      if sequenceArr.contains(grade) {
+      if addedChords.contains(grade) {
        coincidences[tone] = coincidences[tone]! + 1
       }
      }
@@ -203,31 +200,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   analysisLbl.text = founded
  }
  
- //TODO Make sequence an array
  func addChord(newText: String) {
+  addedChords.append(newText)
   if(sequenceLbl.text == sequence_placeHolder) {
    sequenceLbl.text = ""
   }
-  sequenceLbl.text =  sequenceLbl.text! + " " + newText
-  last_chord_added = newText
+  sequenceLbl.text =  addedChords.joinWithSeparator("-")
   analyzeSequence()
  }
  
  func removeLastChord() {
-  if(sequenceLbl.text != sequence_placeHolder) {
-   if(sequenceLbl.text?.characters.count > 2 && sequenceLbl.text != sequence_placeHolder){
-    sequenceLbl.text = sequenceLbl.text?.substringToIndex(
-     sequenceLbl.text!.endIndex.advancedBy((last_chord_added.characters.count * -1))
-    )
-   } else {
-    sequenceLbl.text = sequence_placeHolder
-   }
-  }
-  
-  if(sequenceLbl.text?.characters.count == 0) {
-   sequenceLbl.text=sequence_placeHolder
-  } else {
+  if(addedChords.count > 0) {
+   addedChords.removeLast()
+   sequenceLbl.text =  addedChords.joinWithSeparator("-")
    analyzeSequence()
+  } else{
+   sequenceLbl.text = sequence_placeHolder
   }
  }
  
