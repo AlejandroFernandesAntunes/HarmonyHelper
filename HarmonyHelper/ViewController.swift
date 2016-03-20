@@ -13,6 +13,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  let analysis_placeHolder = "Analysis"
  var chordtoAdd = ""
  var addedChords:[String] = []
+ var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","Min","dim", ""],["7", ""]]
  var avaiable_chords = [
   "CMaj7",
   "C7",
@@ -220,23 +221,34 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  }
  
  // MARK: UIPickerViewDataSource Delegate
- 
+ //how many componentns the picker has
  func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-  return 1
+  return 3
  }
  
  func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-  return avaiable_chords.count
+  if component == 0 {
+   return 12
+  }
+  if component == 1 {
+   return 4
+  }
+  if component == 2{
+   return 2
+  }
+  return 0
  }
  
  // pragma MARK: UIPickerViewDelegate
  //this is call when picker view is created
  func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-  return avaiable_chords[row]
+  return available_chords[component][row]
  }
  //this is call when picker view option is selected
  func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-  chordtoAdd = avaiable_chords[row]
+  chordtoAdd = available_chords[0][pickerView.selectedRowInComponent(0)] +
+    available_chords[1][pickerView.selectedRowInComponent(1)] +
+    available_chords[2][pickerView.selectedRowInComponent(2)]
  }
  
  // MARK: Actions
