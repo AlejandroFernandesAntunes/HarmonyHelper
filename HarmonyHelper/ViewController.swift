@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  let sequence_placeHolder = "Sequence"
- let analysis_placeHolder = "Analysis"
+ let analysis_placeHolder = "please add more chords to the sequence to start the analysis"
  var chordtoAdd = ""
  var addedChords:[String] = []
  var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","min","dim"],["7", "7Maj"]]
@@ -69,12 +69,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  @IBOutlet weak var sequenceLbl: UILabel!
  @IBOutlet weak var analysisLbl: UILabel!
  @IBOutlet weak var chordsPicker: UIPickerView!
- 
+
+ @IBOutlet weak var btnAddChord: UIButton!
+    @IBOutlet weak var btnRemoveChord: UIButton!
  
  override func viewDidLoad() {
   super.viewDidLoad()
   chordsPicker.dataSource = self;
   chordsPicker.delegate = self;
+  
+  //background color
+  //self.view.backgroundColor = UIColor.grayColor()
+  
+  // FontAwesome icon in add/reomve buttons
+  btnAddChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+  btnAddChord.setTitle(String.fontAwesomeIconWithName(.PlusSquareO), forState: .Normal)
+  
+  btnRemoveChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+  btnRemoveChord.setTitle(String.fontAwesomeIconWithName(.MinusSquareO), forState: .Normal)
  }
  
  override func didReceiveMemoryWarning() {
@@ -190,7 +202,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   let maxim = coincidences.values.maxElement()
   var founded:String = ""
   if(maxim == 0) {
-   founded = analysis_placeHolder
+   //array and set for uniques
+   founded = "The sequence can be interpreted as a vamp, try using Major/minor pentatonic of: \(Array(Set(addedChords)).joinWithSeparator("-"))"
   } else {
    for (key, value) in coincidences {
     if (value == maxim)
@@ -198,6 +211,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
      founded =  founded + " " + key
     }
    }
+   founded = "That sequence of chords is contained in the Ionian mode of: \(founded)."
   }
   analysisLbl.text = founded
  }

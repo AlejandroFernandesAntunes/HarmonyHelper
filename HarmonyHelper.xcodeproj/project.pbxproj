@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9FA3031C9F4D460094E302 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FA2FF1C9F4D460094E302 /* Enum.swift */; };
+		1D9FA3041C9F4D460094E302 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D9FA3011C9F4D460094E302 /* FontAwesome.otf */; };
+		1D9FA3051C9F4D460094E302 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FA3021C9F4D460094E302 /* FontAwesome.swift */; };
 		1DAA75B11C95A85E00A5F456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA75B01C95A85E00A5F456 /* AppDelegate.swift */; };
 		1DAA75B31C95A85E00A5F456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA75B21C95A85E00A5F456 /* ViewController.swift */; };
 		1DAA75B61C95A85E00A5F456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA75B41C95A85E00A5F456 /* Main.storyboard */; };
@@ -26,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D9FA2FF1C9F4D460094E302 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		1D9FA3001C9F4D460094E302 /* FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesome.h; sourceTree = "<group>"; };
+		1D9FA3011C9F4D460094E302 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		1D9FA3021C9F4D460094E302 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		1DAA75AD1C95A85E00A5F456 /* HarmonyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarmonyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAA75B01C95A85E00A5F456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DAA75B21C95A85E00A5F456 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 1; };
@@ -80,6 +87,10 @@
 				1DAA75B01C95A85E00A5F456 /* AppDelegate.swift */,
 				1DAA75B21C95A85E00A5F456 /* ViewController.swift */,
 				1DAA75B41C95A85E00A5F456 /* Main.storyboard */,
+				1D9FA2FF1C9F4D460094E302 /* Enum.swift */,
+				1D9FA3001C9F4D460094E302 /* FontAwesome.h */,
+				1D9FA3011C9F4D460094E302 /* FontAwesome.otf */,
+				1D9FA3021C9F4D460094E302 /* FontAwesome.swift */,
 				1DAA75B71C95A85E00A5F456 /* Assets.xcassets */,
 				1DAA75B91C95A85E00A5F456 /* LaunchScreen.storyboard */,
 				1DAA75BC1C95A85E00A5F456 /* Info.plist */,
@@ -180,6 +191,7 @@
 			files = (
 				1DAA75BB1C95A85E00A5F456 /* LaunchScreen.storyboard in Resources */,
 				1DAA75B81C95A85E00A5F456 /* Assets.xcassets in Resources */,
+				1D9FA3041C9F4D460094E302 /* FontAwesome.otf in Resources */,
 				1DAA75B61C95A85E00A5F456 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,8 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9FA3051C9F4D460094E302 /* FontAwesome.swift in Sources */,
 				1DAA75B31C95A85E00A5F456 /* ViewController.swift in Sources */,
 				1DAA75B11C95A85E00A5F456 /* AppDelegate.swift in Sources */,
+				1D9FA3031C9F4D460094E302 /* Enum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

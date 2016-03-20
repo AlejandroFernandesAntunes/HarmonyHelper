@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,69 +22,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="P1v-TJ-7qi">
-                                <rect key="frame" x="0.0" y="80" width="600" height="408"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="P1v-TJ-7qi">
+                                <rect key="frame" x="1" y="50" width="587" height="388"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chord" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-E4-hFi">
-                                        <rect key="frame" x="249.5" y="0.0" width="101.5" height="35.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harmony Helper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-E4-hFi">
+                                        <rect key="frame" x="151.5" y="0.0" width="284" height="35.5"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
                                         <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="specify the chord you want to add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0D-nm-Gih">
+                                        <rect key="frame" x="165.5" y="47.5" width="256.5" height="15"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <pickerView contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="9cr-vr-mLc">
-                                        <rect key="frame" x="140" y="47.5" width="320" height="216"/>
+                                        <rect key="frame" x="133.5" y="74.5" width="320" height="216"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="Et4-Sf-hft"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="EWw-DH-cFF"/>
                                         </connections>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-EU-HkN">
-                                        <rect key="frame" x="198" y="275.5" width="204" height="28"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
-                                        <state key="normal" title="+ Add chord to sequence">
-                                            <color key="titleColor" red="0.098942275829062759" green="0.55939136125654443" blue="0.30403483225122552" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addChordToSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppl-O1-Hhe"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVM-eD-yld">
-                                        <rect key="frame" x="220" y="315.5" width="160" height="28"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
-                                        <state key="normal" title="- Remove last chord">
-                                            <color key="titleColor" red="0.98322971204188481" green="0.0061409576757275727" blue="0.16505028653421744" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="removeLastChordFromSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOt-Qe-wOK"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8">
-                                        <rect key="frame" x="261.5" y="355.5" width="77" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analysis" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe3-6B-TEK">
-                                        <rect key="frame" x="255.5" y="388" width="89.5" height="20"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
-                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LHz-nw-nMU">
+                                        <rect key="frame" x="119.5" y="302.5" width="348" height="28"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVM-eD-yld">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="28"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                <state key="normal" title="Remove last chord">
+                                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="removeLastChordFromSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOt-Qe-wOK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-EU-HkN">
+                                                <rect key="frame" x="184" y="0.0" width="164" height="28"/>
+                                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="16"/>
+                                                <state key="normal" title="Add chord to sequence">
+                                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addChordToSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppl-O1-Hhe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vQu-Gi-AU1">
+                                        <rect key="frame" x="20" y="342.5" width="547" height="45.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-68-Vwl">
+                                                <rect key="frame" x="0.0" y="0.0" width="547" height="45.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="547" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please add more chords to the sequence to start the analysis" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe3-6B-TEK">
+                                                        <rect key="frame" x="0.0" y="32.5" width="547" height="13"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47798960576408944" green="0.86682692307692311" blue="0.62174325269153652" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.47798960579999999" green="0.86682692309999998" blue="0.62174325269999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vQu-Gi-AU1" secondAttribute="trailing" constant="20" id="BF7-4m-l9W"/>
+                                    <constraint firstItem="vQu-Gi-AU1" firstAttribute="leading" secondItem="P1v-TJ-7qi" secondAttribute="leading" constant="20" id="fDm-JA-EM1"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="P1v-TJ-7qi" secondAttribute="trailing" id="0RJ-tE-dhd"/>
-                            <constraint firstItem="P1v-TJ-7qi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wvO-2B-gbI"/>
-                            <constraint firstItem="P1v-TJ-7qi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="xwB-H8-2Zg"/>
+                            <constraint firstAttribute="trailing" secondItem="P1v-TJ-7qi" secondAttribute="trailing" constant="12" id="0RJ-tE-dhd"/>
+                            <constraint firstItem="P1v-TJ-7qi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="1" id="wvO-2B-gbI"/>
+                            <constraint firstItem="P1v-TJ-7qi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="xwB-H8-2Zg"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="analysisLbl" destination="Pe3-6B-TEK" id="Yhn-7P-66A"/>
+                        <outlet property="btnAddChord" destination="PH2-EU-HkN" id="Gwu-nf-dyM"/>
+                        <outlet property="btnRemoveChord" destination="kVM-eD-yld" id="oCa-PW-VGV"/>
                         <outlet property="chordsPicker" destination="9cr-vr-mLc" id="E5W-Qf-fER"/>
                         <outlet property="sequenceLbl" destination="3m6-be-CU8" id="0cj-B3-tKl"/>
                     </connections>
