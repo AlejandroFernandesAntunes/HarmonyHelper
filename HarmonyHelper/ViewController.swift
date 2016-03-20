@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  let analysis_placeHolder = "Analysis"
  var chordtoAdd = ""
  var addedChords:[String] = []
- var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","min","dim", ""],["7", "7Maj"]]
+ var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","min","dim"],["7", "7Maj"]]
  var avaiable_chords = [
   "CMaj7",
   "C7",
