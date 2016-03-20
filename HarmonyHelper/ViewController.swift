@@ -226,13 +226,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
   return 3
  }
- 
+ // this says each compoonent how many items have
  func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
   if component == 0 {
    return 12
   }
   if component == 1 {
-   return 4
+   return 3
   }
   if component == 2{
    return 2
