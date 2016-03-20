@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  let analysis_placeHolder = "Analysis"
  var chordtoAdd = ""
  var addedChords:[String] = []
- var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","min","dim", ""],["7", ""]]
+ var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","min","dim", ""],["7", "7Maj"]]
  var avaiable_chords = [
   "CMaj7",
   "C7",
@@ -247,9 +247,21 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  }
  //this is call when picker view option is selected
  func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-  chordtoAdd = available_chords[0][pickerView.selectedRowInComponent(0)] +
-    available_chords[1][pickerView.selectedRowInComponent(1)] +
-    available_chords[2][pickerView.selectedRowInComponent(2)]
+  let root = available_chords[0][pickerView.selectedRowInComponent(0)]
+  let nature = available_chords[1][pickerView.selectedRowInComponent(1)]
+  let seventh = available_chords[2][pickerView.selectedRowInComponent(2)]
+  
+  if nature.lowercaseString == "min" {
+   chordtoAdd = root + nature
+  }
+  
+  if nature.lowercaseString == "maj" && seventh == "7" {
+   chordtoAdd = root + seventh
+  }
+  
+  if nature.lowercaseString == "maj" && seventh == "7Maj" {
+   chordtoAdd = root + nature + "7"
+  }
  }
  
  // MARK: Actions
