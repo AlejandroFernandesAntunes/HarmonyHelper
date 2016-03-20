@@ -251,7 +251,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   let nature = available_chords[1][pickerView.selectedRowInComponent(1)]
   let seventh = available_chords[2][pickerView.selectedRowInComponent(2)]
   
-  if nature.lowercaseString == "min" {
+  if nature.lowercaseString == "min" || nature.lowercaseString == "dim" {
    chordtoAdd = root + nature
   }
   
