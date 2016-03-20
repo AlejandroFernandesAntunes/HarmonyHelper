@@ -23,31 +23,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="P1v-TJ-7qi">
-                                <rect key="frame" x="1" y="50" width="587" height="388"/>
+                                <rect key="frame" x="1" y="50" width="587" height="421"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harmony Helper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-E4-hFi">
-                                        <rect key="frame" x="151.5" y="0.0" width="284" height="35.5"/>
+                                        <rect key="frame" x="152" y="0.0" width="284" height="36"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
                                         <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeG-oT-Bkh">
+                                        <rect key="frame" x="273" y="48" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="specify the chord you want to add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0D-nm-Gih">
-                                        <rect key="frame" x="165.5" y="47.5" width="256.5" height="15"/>
+                                        <rect key="frame" x="166" y="80" width="257" height="15"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                         <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="9cr-vr-mLc">
-                                        <rect key="frame" x="133.5" y="74.5" width="320" height="216"/>
+                                        <rect key="frame" x="134" y="107" width="320" height="216"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="Et4-Sf-hft"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="EWw-DH-cFF"/>
                                         </connections>
                                     </pickerView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LHz-nw-nMU">
-                                        <rect key="frame" x="119.5" y="302.5" width="348" height="28"/>
+                                        <rect key="frame" x="120" y="335" width="348" height="28"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVM-eD-yld">
                                                 <rect key="frame" x="0.0" y="0.0" width="164" height="28"/>
@@ -76,19 +83,19 @@
                                         <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vQu-Gi-AU1">
-                                        <rect key="frame" x="20" y="342.5" width="547" height="45.5"/>
+                                        <rect key="frame" x="20" y="375" width="547" height="46"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-68-Vwl">
-                                                <rect key="frame" x="0.0" y="0.0" width="547" height="45.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="547" height="46"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sequence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="547" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="547" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please add more chords to the sequence to start the analysis" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe3-6B-TEK">
-                                                        <rect key="frame" x="0.0" y="32.5" width="547" height="13"/>
+                                                        <rect key="frame" x="0.0" y="33" width="547" height="13"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
                                                         <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -119,6 +126,7 @@
                         <outlet property="btnAddChord" destination="PH2-EU-HkN" id="Gwu-nf-dyM"/>
                         <outlet property="btnRemoveChord" destination="kVM-eD-yld" id="oCa-PW-VGV"/>
                         <outlet property="chordsPicker" destination="9cr-vr-mLc" id="E5W-Qf-fER"/>
+                        <outlet property="lblMusicNote" destination="VeG-oT-Bkh" id="Q1j-Xn-MO8"/>
                         <outlet property="sequenceLbl" destination="3m6-be-CU8" id="0cj-B3-tKl"/>
                     </connections>
                 </viewController>

@@ -72,6 +72,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
  @IBOutlet weak var btnAddChord: UIButton!
     @IBOutlet weak var btnRemoveChord: UIButton!
+    @IBOutlet weak var lblMusicNote: UILabel!
  
  override func viewDidLoad() {
   super.viewDidLoad()
@@ -87,6 +88,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   
   btnRemoveChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
   btnRemoveChord.setTitle(String.fontAwesomeIconWithName(.MinusSquareO), forState: .Normal)
+  
+  
+  lblMusicNote.font = UIFont.fontAwesomeOfSize(15)
+  lblMusicNote.text = String.fontAwesomeIconWithName(.Music)
  }
  
  override func didReceiveMemoryWarning() {

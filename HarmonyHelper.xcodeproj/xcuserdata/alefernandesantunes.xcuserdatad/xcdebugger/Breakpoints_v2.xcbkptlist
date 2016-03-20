@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HarmonyHelper/ViewController.swift"
-            timestampString = "480204936.719972"
+            timestampString = "480205590.430019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "analyzeSequence()"
             landmarkType = "5">
          </BreakpointContent>
