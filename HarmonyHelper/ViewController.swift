@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  let analysis_placeHolder = "Analysis"
  var chordtoAdd = ""
  var addedChords:[String] = []
- var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","Min","dim", ""],["7", ""]]
+ var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","min","dim", ""],["7", ""]]
  var avaiable_chords = [
   "CMaj7",
   "C7",
@@ -176,7 +176,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let harmonized:[String]? = harmonized_tones[tone]
     if(harmonized != nil) {
      for grade:String in harmonized!{
-      if addedChords.contains(grade) {
+      let upperAddedChords = addedChords.map { $0.uppercaseString}
+      if upperAddedChords.contains(grade.uppercaseString) {
        coincidences[tone] = coincidences[tone]! + 1
       }
      }
