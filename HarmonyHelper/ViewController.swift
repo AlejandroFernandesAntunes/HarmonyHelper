@@ -67,13 +67,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  
  // MARK: Properties
  @IBOutlet weak var sequenceLbl: UILabel!
- @IBOutlet weak var analysisLbl: UILabel!
  @IBOutlet weak var chordsPicker: UIPickerView!
-
- @IBOutlet weak var btnAddChord: UIButton!
-    @IBOutlet weak var btnRemoveChord: UIButton!
-    @IBOutlet weak var lblMusicNote: UILabel!
  
+ @IBOutlet weak var btnAddChord: UIButton!
+ @IBOutlet weak var btnRemoveChord: UIButton!
+ @IBOutlet weak var lblMusicNote: UILabel!
+    @IBOutlet weak var txtAnalysis: UITextView!
+
  override func viewDidLoad() {
   super.viewDidLoad()
   chordsPicker.dataSource = self;
@@ -83,15 +83,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   //self.view.backgroundColor = UIColor.grayColor()
   
   // FontAwesome icon in add/reomve buttons
-  btnAddChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-  btnAddChord.setTitle(String.fontAwesomeIconWithName(.PlusSquareO), forState: .Normal)
-  
-  btnRemoveChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-  btnRemoveChord.setTitle(String.fontAwesomeIconWithName(.MinusSquareO), forState: .Normal)
+//  btnAddChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+//  btnAddChord.setTitle(String.fontAwesomeIconWithName(.PlusSquareO), forState: .Normal)
+//  
+//  btnRemoveChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+//  btnRemoveChord.setTitle(String.fontAwesomeIconWithName(.MinusSquareO), forState: .Normal)
   
   
   lblMusicNote.font = UIFont.fontAwesomeOfSize(15)
   lblMusicNote.text = String.fontAwesomeIconWithName(.Music)
+   
  }
  
  override func didReceiveMemoryWarning() {
@@ -207,8 +208,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   let maxim = coincidences.values.maxElement()
   var founded:String = ""
   if(maxim == 0) {
-   //array and set for uniques
-   founded = "The sequence can be interpreted as a vamp, try using Major/minor pentatonic of: \(Array(Set(addedChords)).joinWithSeparator("-"))"
+   if(addedChords.count == 0) {
+    founded = analysis_placeHolder
+   }else{
+    //array and set for uniques
+    founded = "The sequence can be interpreted as a vamp, try using Major/minor pentatonic of: \(Array(Set(addedChords)).joinWithSeparator("-"))"
+   }
   } else {
    for (key, value) in coincidences {
     if (value == maxim)
@@ -218,7 +223,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
    }
    founded = "That sequence of chords is contained in the Ionian mode of: \(founded)."
   }
-  analysisLbl.text = founded
+    txtAnalysis.text = founded
  }
  
  func addChord(newText: String) {
@@ -259,7 +264,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   return 0
  }
  
- // pragma MARK: UIPickerViewDelegate
+ // MARK: UIPickerViewDelegate
  //this is call when picker view is created
  func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
   return available_chords[component][row]
