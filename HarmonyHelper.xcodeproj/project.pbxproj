@@ -16,6 +16,9 @@
 		1DAA75B81C95A85E00A5F456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA75B71C95A85E00A5F456 /* Assets.xcassets */; };
 		1DAA75BB1C95A85E00A5F456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA75B91C95A85E00A5F456 /* LaunchScreen.storyboard */; };
 		1DAA75C61C95A85E00A5F456 /* HarmonyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA75C51C95A85E00A5F456 /* HarmonyHelperTests.swift */; };
+		1DBBAB121CA17F3B008058D2 /* harmonies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBAB111CA17F3B008058D2 /* harmonies.plist */; };
+		1DBBAB141CA187AF008058D2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBAB131CA187AF008058D2 /* Extensions.swift */; };
+		DA4E600CF943F4993AB3816F /* Pods_HarmonyHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D1F42B2B4593059563DDB1 /* Pods_HarmonyHelper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,11 @@
 		1DAA75C11C95A85E00A5F456 /* HarmonyHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarmonyHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAA75C51C95A85E00A5F456 /* HarmonyHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyHelperTests.swift; sourceTree = "<group>"; };
 		1DAA75C71C95A85E00A5F456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBBAB111CA17F3B008058D2 /* harmonies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = harmonies.plist; sourceTree = "<group>"; };
+		1DBBAB131CA187AF008058D2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4EF8525348A291686C0001C0 /* Pods-HarmonyHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonyHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarmonyHelper/Pods-HarmonyHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		B9D1F42B2B4593059563DDB1 /* Pods_HarmonyHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarmonyHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92CAFDE19A4766F178785B1 /* Pods-HarmonyHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonyHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarmonyHelper/Pods-HarmonyHelper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4E600CF943F4993AB3816F /* Pods_HarmonyHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1997F2E1FF7CCE2A533698DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D1F42B2B4593059563DDB1 /* Pods_HarmonyHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1DAA75A41C95A85E00A5F456 = {
 			isa = PBXGroup;
 			children = (
 				1DAA75AF1C95A85E00A5F456 /* HarmonyHelper */,
 				1DAA75C41C95A85E00A5F456 /* HarmonyHelperTests */,
 				1DAA75AE1C95A85E00A5F456 /* Products */,
+				8FE0C191A1EF320E6C8759BA /* Pods */,
+				1997F2E1FF7CCE2A533698DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +113,8 @@
 				1DAA75B71C95A85E00A5F456 /* Assets.xcassets */,
 				1DAA75B91C95A85E00A5F456 /* LaunchScreen.storyboard */,
 				1DAA75BC1C95A85E00A5F456 /* Info.plist */,
+				1DBBAB111CA17F3B008058D2 /* harmonies.plist */,
+				1DBBAB131CA187AF008058D2 /* Extensions.swift */,
 			);
 			path = HarmonyHelper;
 			sourceTree = "<group>";
@@ -107,6 +128,15 @@
 			path = HarmonyHelperTests;
 			sourceTree = "<group>";
 		};
+		8FE0C191A1EF320E6C8759BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EF8525348A291686C0001C0 /* Pods-HarmonyHelper.debug.xcconfig */,
+				D92CAFDE19A4766F178785B1 /* Pods-HarmonyHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DAA75CA1C95A85E00A5F456 /* Build configuration list for PBXNativeTarget "HarmonyHelper" */;
 			buildPhases = (
+				81764FD5A4A66461C6A8A182 /* Check Pods Manifest.lock */,
 				1DAA75A91C95A85E00A5F456 /* Sources */,
 				1DAA75AA1C95A85E00A5F456 /* Frameworks */,
 				1DAA75AB1C95A85E00A5F456 /* Resources */,
+				D205585608355FF808F0C36A /* Embed Pods Frameworks */,
+				400DF72E116B656F5EF2394F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +226,7 @@
 				1DAA75B81C95A85E00A5F456 /* Assets.xcassets in Resources */,
 				1D9FA3041C9F4D460094E302 /* FontAwesome.otf in Resources */,
 				1DAA75B61C95A85E00A5F456 /* Main.storyboard in Resources */,
+				1DBBAB121CA17F3B008058D2 /* harmonies.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,11 +239,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		400DF72E116B656F5EF2394F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarmonyHelper/Pods-HarmonyHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81764FD5A4A66461C6A8A182 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D205585608355FF808F0C36A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarmonyHelper/Pods-HarmonyHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1DAA75A91C95A85E00A5F456 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBBAB141CA187AF008058D2 /* Extensions.swift in Sources */,
 				1D9FA3051C9F4D460094E302 /* FontAwesome.swift in Sources */,
 				1DAA75B31C95A85E00A5F456 /* ViewController.swift in Sources */,
 				1DAA75B11C95A85E00A5F456 /* AppDelegate.swift in Sources */,
@@ -340,6 +423,7 @@
 		};
 		1DAA75CB1C95A85E00A5F456 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF8525348A291686C0001C0 /* Pods-HarmonyHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -354,6 +438,7 @@
 		};
 		1DAA75CC1C95A85E00A5F456 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D92CAFDE19A4766F178785B1 /* Pods-HarmonyHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

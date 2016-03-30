@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FlatUIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  let sequence_placeHolder = "Sequence"
@@ -14,94 +15,194 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  var chordtoAdd = ""
  var addedChords:[String] = []
  var available_chords = [["C", "C#","D","D#","E","F","F#","G","G#","A","A#","B"],["Maj","min","dim"],["7", "7Maj"]]
- var avaiable_chords = [
-  "CMaj7",
-  "C7",
-  "Cmin",
-  "Cdim",
-  "C#Maj7",
-  "C#7",
-  "C#min",
-  "C#dim",
-  "DMaj7",
-  "D7",
-  "Dmin",
-  "Ddim",
-  "D#Maj7",
-  "D#7",
-  "D#min",
-  "D#dim",
-  "EMaj7",
-  "E7",
-  "Emin",
-  "Edim",
-  "FMaj7",
-  "F7",
-  "Fmin",
-  "Fdim",
-  "F#Maj7",
-  "F#7",
-  "F#min",
-  "F#dim",
-  "GMaj7",
-  "G7",
-  "Gmin",
-  "Gdim",
-  "G#Maj7",
-  "G#7",
-  "G#min",
-  "G#dim",
-  "AMaj7",
-  "A7",
-  "Amin",
-  "Adim",
-  "A#Maj7",
-  "A#7",
-  "A#min",
-  "A#dim",
-  "BMaj7",
-  "B7",
-  "Bmin",
-  "Bdim"
- ]
+ var harmonized_tones = [String: [String]]()
  
  // MARK: Properties
- @IBOutlet weak var sequenceLbl: UILabel!
  @IBOutlet weak var chordsPicker: UIPickerView!
- 
- @IBOutlet weak var btnAddChord: UIButton!
- @IBOutlet weak var btnRemoveChord: UIButton!
+ // labels
+ @IBOutlet weak var sequenceLbl: UILabel!
+ @IBOutlet weak var lblSubtitle: UILabel!
  @IBOutlet weak var lblMusicNote: UILabel!
-    @IBOutlet weak var txtAnalysis: UITextView!
-
+ @IBOutlet weak var titleLabel: UILabel!
+ // buttons
+ @IBOutlet weak var btnAddChord: FUIButton!
+ @IBOutlet weak var btnRemoveChord: FUIButton!
+ // textViews
+ @IBOutlet weak var txtAnalysis: UITextView!
+ 
  override func viewDidLoad() {
   super.viewDidLoad()
   chordsPicker.dataSource = self;
   chordsPicker.delegate = self;
   
-  //background color
-  //self.view.backgroundColor = UIColor.grayColor()
-  
-  // FontAwesome icon in add/reomve buttons
-//  btnAddChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-//  btnAddChord.setTitle(String.fontAwesomeIconWithName(.PlusSquareO), forState: .Normal)
-//  
-//  btnRemoveChord.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-//  btnRemoveChord.setTitle(String.fontAwesomeIconWithName(.MinusSquareO), forState: .Normal)
-  
-  
   lblMusicNote.font = UIFont.fontAwesomeOfSize(15)
   lblMusicNote.text = String.fontAwesomeIconWithName(.Music)
-   
+  
+  txtAnalysis.text = analysis_placeHolder
+  
+  btnAddChord.buttonColor = UIColor.turquoiseColor();
+  btnAddChord.shadowColor = UIColor.greenSeaColor();
+  btnAddChord.shadowHeight = 3;
+  btnAddChord.cornerRadius = 0;
+  btnAddChord.titleLabel!.font = UIFont.boldFlatFontOfSize(16);
+  btnAddChord.setTitleColor(UIColor.cloudsColor(), forState: UIControlState.Normal);
+  btnAddChord.setTitleColor(UIColor.cloudsColor(), forState: UIControlState.Highlighted);
+  
+  btnRemoveChord.buttonColor = UIColor(red: 229.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0)
+  btnRemoveChord.shadowColor = UIColor(red: 192.0/255.0, green: 58.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+  btnRemoveChord.shadowHeight = 3
+  btnRemoveChord.cornerRadius = 0
+  
+  readPlist()
+  
  }
  
- override func didReceiveMemoryWarning() {
-  super.didReceiveMemoryWarning()
+ func readPlist() {
+  var harmonies: NSDictionary?
+  if let path = NSBundle.mainBundle().pathForResource("harmonies", ofType: "plist") {
+   harmonies = NSDictionary(contentsOfFile: path)
+  }
+  if let dict = harmonies {
+   harmonized_tones["C"] = dict["C"] as? [String]
+   harmonized_tones["D"] = dict["D"] as? [String]
+   harmonized_tones["E"] = dict["E"] as? [String]
+   harmonized_tones["F"] = dict["F"] as? [String]
+   harmonized_tones["G"] = dict["G"] as? [String]
+   harmonized_tones["A"] = dict["A"] as? [String]
+   harmonized_tones["B"] = dict["B"] as? [String]
+  }
+ }
+ 
+ override func viewDidLayoutSubviews() {
+  let air:CGFloat = 30
+  let currentDevice: UIDevice = UIDevice.currentDevice()
+  let orientation : UIDeviceOrientation = currentDevice.orientation
+  
+  var nextStackedYPos:CGFloat = 0
+  
+  super.viewDidLayoutSubviews()
+  titleLabel.sizeToFit()
+  lblMusicNote.sizeToFit()
+  
+  //TODO function to size receiving an element as parameter
+  
+  // In order of appearence
+  if (orientation.isPortrait) {
+   
+   //portrait
+   titleLabel.frame = CGRectMake(
+    (self.view.bounds.width / 2) - (self.titleLabel.bounds.width / 2),
+    air,
+    self.titleLabel.bounds.width,
+    self.titleLabel.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.titleLabel.bounds.height + air
+   
+   lblSubtitle.frame = CGRectMake(
+    (self.view.bounds.width / 2) - (self.lblSubtitle.bounds.width / 2),
+    nextStackedYPos,
+    self.lblSubtitle.bounds.width,
+    self.lblSubtitle.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.lblSubtitle.bounds.height + air
+   
+   chordsPicker.frame = CGRectMake(
+    (self.view.bounds.width / 2) - (self.chordsPicker.bounds.width / 2),
+    nextStackedYPos,
+    self.chordsPicker.bounds.width,
+    self.chordsPicker.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.chordsPicker.bounds.height + air
+   
+   
+   btnRemoveChord.frame = CGRectMake(
+    15,
+    nextStackedYPos,
+    130,
+    30)
+   
+   btnAddChord.frame = CGRectMake(
+    self.view.bounds.width - (self.btnRemoveChord.bounds.width + 15),
+    nextStackedYPos,
+    130,
+    30)
+   
+   nextStackedYPos = nextStackedYPos + self.btnAddChord.bounds.height + air
+   
+   sequenceLbl.frame = CGRectMake(
+    (self.view.bounds.width / 2) - (self.sequenceLbl.bounds.width / 2),
+    nextStackedYPos ,
+    self.sequenceLbl.bounds.width,
+    self.sequenceLbl.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.sequenceLbl.bounds.height + air
+   
+   txtAnalysis.frame = CGRectMake(
+    (self.view.bounds.width / 2) - (self.txtAnalysis.bounds.width / 2),
+    nextStackedYPos,
+    self.txtAnalysis.bounds.width,
+    self.txtAnalysis.bounds.height)
+  } else {
+   let leftBound:CGFloat = 10
+   
+   //landscape
+   titleLabel.frame = CGRectMake(
+    leftBound,
+    air,
+    self.titleLabel.bounds.width,
+    self.titleLabel.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.titleLabel.bounds.height + air
+   
+   lblSubtitle.frame = CGRectMake(
+    leftBound,
+    nextStackedYPos,
+    self.lblSubtitle.bounds.width,
+    self.lblSubtitle.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.lblSubtitle.bounds.height + air
+   
+   chordsPicker.frame = CGRectMake(
+    leftBound,
+    nextStackedYPos,
+    self.chordsPicker.bounds.width,
+    self.chordsPicker.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.chordsPicker.bounds.height + air
+   
+   
+   btnRemoveChord.frame = CGRectMake(
+    leftBound,
+    nextStackedYPos,
+    130,
+    30)
+   
+   btnAddChord.frame = CGRectMake(
+    leftBound,
+    nextStackedYPos,
+    130,
+    30)
+   
+   nextStackedYPos = nextStackedYPos + self.btnAddChord.bounds.height + air
+   
+   sequenceLbl.frame = CGRectMake(
+    (self.view.bounds.width / 2) - (self.sequenceLbl.bounds.width / 2),
+    nextStackedYPos ,
+    self.sequenceLbl.bounds.width,
+    self.sequenceLbl.bounds.height)
+   
+   nextStackedYPos = nextStackedYPos + self.sequenceLbl.bounds.height + air
+   
+   txtAnalysis.frame = CGRectMake(
+    (self.view.bounds.width / 2) - (self.txtAnalysis.bounds.width / 2),
+    nextStackedYPos,
+    self.txtAnalysis.bounds.width,
+    self.txtAnalysis.bounds.height)
+
+  }
  }
  
  func analyzeSequence() {
-  var harmonized_tones = [String: [String]]()
-  
   let tones = ["C", "C#","D","D#","E", "F", "F#", "G", "G#", "A", "A#", "B"]
   
   var coincidences = [String:Int]()
@@ -115,79 +216,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   coincidences["G"] = 0
   coincidences["A"] = 0
   coincidences["B"] = 0
-  
-  // harmonizations
-  var c = [String]()
-  c.append("CMaj7")
-  c.append("Dmin7")
-  c.append("Emin7")
-  c.append("FMaj7")
-  c.append("G7")
-  c.append("Amin")
-  c.append("Bdim")
-  harmonized_tones["C"] = c
-  
-  var d = [String]()
-  d.append("C#dim")
-  d.append("DMaj7")
-  d.append("Emin7")
-  d.append("Fmin7")
-  d.append("G#Maj7")
-  d.append("A7")
-  d.append("Bmin")
-  harmonized_tones["D"] = d
-  
-  
-  var e = [String]()
-  e.append("C#min")
-  e.append("D#dim")
-  e.append("EMaj7")
-  e.append("Fmin7")
-  e.append("G#min7")
-  e.append("A#Maj7")
-  e.append("B7")
-  harmonized_tones["E"] = e
-  
-  var f = [String]()
-  f.append("C7")
-  f.append("Dmin")
-  f.append("Edim")
-  f.append("FMaj7")
-  f.append("Gmin")
-  f.append("Amin")
-  f.append("BbMaj7")
-  harmonized_tones["F"] = f
-  
-  var g = [String]()
-  g.append("C#Maj7")
-  g.append("D7")
-  g.append("Emin")
-  g.append("F#dim")
-  g.append("GMaj7")
-  g.append("Amin")
-  g.append("Bmin")
-  harmonized_tones["G"] = g
-  
-  var a = [String]()
-  a.append("C#min")
-  a.append("D#Maj7")
-  a.append("E7")
-  a.append("F#min")
-  a.append("G#dim")
-  a.append("AMaj7")
-  a.append("Bmin")
-  harmonized_tones["A"] = a
-  
-  var b = [String]()
-  b.append("C#min")
-  b.append("D#min")
-  b.append("E#Maj7")
-  b.append("F#7")
-  b.append("G#min")
-  b.append("A#dim")
-  b.append("BMaj7")
-  harmonized_tones["B"] = b
-  
   
   if (addedChords.count > 0) {
    for tone:String in tones {
@@ -223,7 +251,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
    }
    founded = "That sequence of chords is contained in the Ionian mode of: \(founded)."
   }
-    txtAnalysis.text = founded
+  txtAnalysis.text = founded
  }
  
  func addChord(newText: String) {
