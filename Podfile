@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'HarmonyHelper' do
  pod 'FlatUIKit'
+ pod 'LTMorphingLabel'
 end
 
 target 'HarmonyHelperTests' do

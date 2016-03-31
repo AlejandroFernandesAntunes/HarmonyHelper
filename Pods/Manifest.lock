@@ -1,10 +1,13 @@
 PODS:
   - FlatUIKit (1.6.2)
+  - LTMorphingLabel (0.2.0)
 
 DEPENDENCIES:
   - FlatUIKit
+  - LTMorphingLabel
 
 SPEC CHECKSUMS:
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  LTMorphingLabel: 490aa8e079f9247c7f3130f7d4b1be1d66677377
 
 COCOAPODS: 0.39.0

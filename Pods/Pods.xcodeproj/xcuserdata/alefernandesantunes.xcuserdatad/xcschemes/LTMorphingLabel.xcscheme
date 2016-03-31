@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B91F37A3D3D293A41D290E58'
-               BlueprintName = 'Pods-HarmonyHelper'
+               BlueprintIdentifier = 'B74C7DC249F4165817D49707'
+               BlueprintName = 'LTMorphingLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_HarmonyHelper.framework'>
+               BuildableName = 'LTMorphingLabel.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

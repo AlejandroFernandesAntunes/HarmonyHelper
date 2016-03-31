@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LTMorphingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HarmonyHelper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3AA066BCF8BC79D17642CA12A42153C6</key>
+		<key>0DCBD6C869DCC15AF62D43471CB4592C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>526B4A7ED58130995C4C4272FB1B1459</key>
 		<dict>
 			<key>primary</key>
 			<true/>

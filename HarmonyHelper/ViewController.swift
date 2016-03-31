@@ -39,6 +39,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   lblMusicNote.text = String.fontAwesomeIconWithName(.Music)
   
   txtAnalysis.text = analysis_placeHolder
+  sequenceLbl.text = sequence_placeHolder
+
   
   btnAddChord.buttonColor = UIColor.turquoiseColor();
   btnAddChord.shadowColor = UIColor.greenSeaColor();
@@ -188,7 +190,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
    sequenceLbl.frame = CGRectMake(
     (self.view.bounds.width / 2) - (self.sequenceLbl.bounds.width / 2),
     nextStackedYPos ,
-    self.sequenceLbl.bounds.width,
+    180,
     self.sequenceLbl.bounds.height)
    
    nextStackedYPos = nextStackedYPos + self.sequenceLbl.bounds.height + air

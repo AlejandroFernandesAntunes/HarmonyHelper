@@ -61,11 +61,17 @@
                                     <action selector="addChordToSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppl-O1-Hhe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sequence" textAlignment="center" lineBreakMode="wordWrap" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sequence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
                                 <rect key="frame" x="125" y="340.5" width="330" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.1647058824" green="0.50196078430000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingProgress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="morphingEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicin" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QLA-gW-F7K">
                                 <rect key="frame" x="125" y="409.5" width="330" height="129"/>
@@ -97,7 +103,7 @@
                         <outlet property="chordsPicker" destination="9cr-vr-mLc" id="E5W-Qf-fER"/>
                         <outlet property="lblMusicNote" destination="VeG-oT-Bkh" id="Q1j-Xn-MO8"/>
                         <outlet property="lblSubtitle" destination="v0D-nm-Gih" id="7Oi-v9-UTE"/>
-                        <outlet property="sequenceLbl" destination="3m6-be-CU8" id="0cj-B3-tKl"/>
+                        <outlet property="sequenceLbl" destination="3m6-be-CU8" id="35D-ky-bMF"/>
                         <outlet property="titleLabel" destination="Igi-E4-hFi" id="U4S-b7-mY3"/>
                         <outlet property="txtAnalysis" destination="QLA-gW-F7K" id="Rqj-hB-Ofc"/>
                     </connections>
