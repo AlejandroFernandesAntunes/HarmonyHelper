@@ -6,6 +6,8 @@ use_frameworks!
 target 'HarmonyHelper' do
  pod 'FlatUIKit'
  pod 'LTMorphingLabel'
+ pod 'Crashlytics'
+ pod 'Fabric'
 end
 
 target 'HarmonyHelperTests' do

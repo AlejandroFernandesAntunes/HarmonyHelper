@@ -150,6 +150,7 @@
 				1DAA75AB1C95A85E00A5F456 /* Resources */,
 				D205585608355FF808F0C36A /* Embed Pods Frameworks */,
 				400DF72E116B656F5EF2394F /* Copy Pods Resources */,
+				1D9C38CD1CBD292B00F813C6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -190,7 +191,7 @@
 				TargetAttributes = {
 					1DAA75AC1C95A85E00A5F456 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 9AAL5FKKQM;
+						DevelopmentTeam = KYF5PFPW7U;
 					};
 					1DAA75C01C95A85E00A5F456 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -240,6 +241,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D9C38CD1CBD292B00F813C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 62103963387e4218e43b87c405e224fd0c0782df ee2bb0ea3a55978820925f9ff74872395dd1fae4052234766332c69b0bb513fa";
+		};
 		400DF72E116B656F5EF2394F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,7 +444,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HarmonyHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ale.HarmonyHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonroots.harmonyhelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -441,13 +455,13 @@
 			baseConfigurationReference = D92CAFDE19A4766F178785B1 /* Pods-HarmonyHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NeonRoots, LLC (KYF5PFPW7U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NeonRoots, LLC (KYF5PFPW7U)";
 				INFOPLIST_FILE = HarmonyHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ale.HarmonyHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonroots.harmonyhelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "58d5a48d-4b75-4f71-8dab-dd0ca05b811b";
 			};
 			name = Release;
 		};

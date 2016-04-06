@@ -8,6 +8,7 @@
 
 import UIKit
 import FlatUIKit
+import Crashlytics
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  let sequence_placeHolder = "Sequence"
@@ -23,7 +24,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  @IBOutlet weak var sequenceLbl: UILabel!
  @IBOutlet weak var lblSubtitle: UILabel!
  @IBOutlet weak var titleLabel: UILabel!
- // buttons
+    // buttons
  @IBOutlet weak var btnAddChord: FUIButton!
  @IBOutlet weak var btnRemoveChord: FUIButton!
  // textViews
@@ -50,6 +51,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   btnRemoveChord.shadowHeight = 3
   btnRemoveChord.cornerRadius = 0
   
+//  separatorPatchLabel.backgroundColor = self.view.backgroundColor
+//  separatorPatchLabel2.backgroundColor = separatorPatchLabel.backgroundColor
+//  separatorPatchLabel3.backgroundColor = separatorPatchLabel.backgroundColor
+//  separatorPatchLabel4.backgroundColor = separatorPatchLabel.backgroundColor
+//  
   readPlist()
   
  }
@@ -71,74 +77,61 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  }
  
  override func viewDidLayoutSubviews() {
+  super.viewDidLayoutSubviews()
   let air:CGFloat = 30
   let currentDevice: UIDevice = UIDevice.currentDevice()
   let orientation : UIDeviceOrientation = currentDevice.orientation
   
   var nextStackedYPos:CGFloat = 0
-  
-  super.viewDidLayoutSubviews()
   titleLabel.sizeToFit()
   
   //TODO function to size receiving an element as parameter
   
   // In order of appearence
   if (orientation.isPortrait) {
-   
-   //portrait
-   titleLabel.frame = CGRectMake(
-    (self.view.bounds.width / 2) - (self.titleLabel.bounds.width / 2),
-    air,
-    self.titleLabel.bounds.width,
-    self.titleLabel.bounds.height)
-   
-   nextStackedYPos = nextStackedYPos + self.titleLabel.bounds.height + air
-   
-   lblSubtitle.frame = CGRectMake(
-    (self.view.bounds.width / 2) - (self.lblSubtitle.bounds.width / 2),
-    nextStackedYPos,
-    self.lblSubtitle.bounds.width,
-    self.lblSubtitle.bounds.height)
-   
-   nextStackedYPos = nextStackedYPos + self.lblSubtitle.bounds.height + air
-   
-   chordsPicker.frame = CGRectMake(
-    (self.view.bounds.width / 2) - (self.chordsPicker.bounds.width / 2),
-    nextStackedYPos,
-    self.chordsPicker.bounds.width,
-    self.chordsPicker.bounds.height)
+   titleLabel.changeOrigin((self.view.bounds.width / 2) - (self.titleLabel.bounds.width / 2), y: self.titleLabel.height)
+   lblSubtitle.stackMeBelowThisXCentered(self.titleLabel, view: self.view, air: 30)
+   chordsPicker.stackMeBelowThisXCentered(self.lblSubtitle, view: self.view, air: 30)
    chordsPicker.backgroundColor = UIColor(red: 200.0/255.0, green: 205.0/255.0, blue: 206.0/255.0, alpha: 1.0)
    
-   nextStackedYPos = nextStackedYPos + self.chordsPicker.bounds.height + air
+//   //Ilussion of three spinwheels
+//   let borderPatches:CGFloat = 15
+//   let spinnerWidthConsideringBorderPatches:CGFloat = self.chordsPicker.width - (borderPatches * 2)
+//   separatorPatchLabel.frame = CGRectMake(
+//    0,
+//    self.chordsPicker.frame.origin.y,
+//    borderPatches,
+//    self.chordsPicker.height
+//   )
+//   separatorPatchLabel2.frame = CGRectMake(
+//    spinnerWidthConsideringBorderPatches / 3,
+//    self.chordsPicker.frame.origin.y,
+//    15,
+//    self.chordsPicker.height
+//   )
+//   separatorPatchLabel3.frame = CGRectMake(
+//    (spinnerWidthConsideringBorderPatches / 3) * 2,
+//    self.chordsPicker.frame.origin.y,
+//    15,
+//    self.chordsPicker.height
+//   )
+//   separatorPatchLabel4.frame = CGRectMake(
+//    self.view.width - borderPatches,
+//    self.chordsPicker.frame.origin.y,
+//    borderPatches,
+//    self.chordsPicker.height
+//   )
    
    
-   btnRemoveChord.frame = CGRectMake(
-    15,
-    nextStackedYPos,
-    130,
-    30)
    
-   btnAddChord.frame = CGRectMake(
-    self.view.bounds.width - (self.btnRemoveChord.bounds.width + 15),
-    nextStackedYPos,
-    130,
-    30)
-   
-   nextStackedYPos = nextStackedYPos + self.btnAddChord.bounds.height + air
-   
-   sequenceLbl.frame = CGRectMake(
-    (self.view.bounds.width / 2) - (self.sequenceLbl.bounds.width / 2),
-    nextStackedYPos ,
-    self.sequenceLbl.bounds.width,
-    self.sequenceLbl.bounds.height)
-   
-   nextStackedYPos = nextStackedYPos + self.sequenceLbl.bounds.height + air
-   
-   txtAnalysis.frame = CGRectMake(
-    (self.view.bounds.width / 2) - (self.txtAnalysis.bounds.width / 2),
-    nextStackedYPos,
-    self.txtAnalysis.bounds.width,
-    self.txtAnalysis.bounds.height)
+   btnRemoveChord.stackMeBelowThisXCenteredAndChangeSize(chordsPicker, air: 30, width: 130, height: 30)
+   btnRemoveChord.changeOrigin(self.view.width - self.btnRemoveChord.width - 15, y: self.btnRemoveChord.frame.origin.y)
+   btnAddChord.stackMeBelowThisXCenteredAndChangeSize(chordsPicker, air: 30, width: 130, height: 30)
+   btnAddChord.changeOrigin(15, y: self.btnAddChord.frame.origin.y)
+   sequenceLbl.stackMeBelowThisXCenteredAndChangeSize(btnAddChord, air: 30, width: self.view.width - 20, height: self.sequenceLbl.height)
+   sequenceLbl.changeOrigin((self.view.width / 2) - (self.sequenceLbl.width / 2), y: self.sequenceLbl.frame.origin.y)
+   txtAnalysis.stackMeBelowThisXCenteredAndChangeSize(sequenceLbl, air: 30, width: self.sequenceLbl.width, height: self.chordsPicker.height)
+   txtAnalysis.changeOrigin((self.view.width / 2) - (self.txtAnalysis.width / 2), y: self.txtAnalysis.frame.origin.y)
   } else {
    let leftBound:CGFloat = 10
    
@@ -324,5 +317,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  @IBAction func removeLastChordFromSequence(sender: UIButton) {
   removeLastChord()
  }
+
 }
 

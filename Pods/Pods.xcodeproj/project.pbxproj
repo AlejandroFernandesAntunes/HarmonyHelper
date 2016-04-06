@@ -10,64 +10,6 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>0145EF4D5E07B2ED2A3538D8E1CFC4FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIStepper+FlatUI.h</string>
-			<key>path</key>
-			<string>Classes/ios/UIStepper+FlatUI.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>01665726C5B5A005BF2B41EDAF0E21B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Sparkle.png</string>
-			<key>path</key>
-			<string>LTMorphingLabel/Particles/Sparkle.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>01DF077E87A0CC38C64DD5F445CBDC78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIPopoverController+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UIPopoverController+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>03CE88C8A2C0FD9FFD067EBA1499506A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UINavigationBar+FlatUI.h</string>
-			<key>path</key>
-			<string>Classes/ios/UINavigationBar+FlatUI.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>044EB69F2896E07CB3BA01D7AE1373E6</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -84,9 +26,22 @@
 		<key>04913062FB19F572704D1F80F24D0F1E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C4AA58D5C4AE67FD01C3EB780ECAA1D7</string>
+			<string>9F88658639EB46598906354CE8A124AC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>06BC07C1F017F4FD288792361E79AE3D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>LTMorphingLabel.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0795BE1BE916D7502B169EF23221CC0B</key>
 		<dict>
@@ -104,7 +59,7 @@
 		<key>09655714894296138E974CBC74484E5C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F5B03110E712D3F4499170DE3CA9CFFD</string>
+			<string>2D31343721775835F04C07961533B05F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -115,30 +70,32 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>0A85E8329FD71DB4631E5A055A282BBD</key>
+		<key>0A37855C0D6882135AEBFF5D20D1AA0E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIColor+FlatUI.m</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>Classes/ios/UIColor+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0B0B16FE44CBECB512D2FC308055C7BB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D766A45860CECC78F730838A9AD36875</string>
+			<string>5FF009165A8C2146E11DEDD47BB5E549</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>0C5291482A3F7BA2CC58320C9B5BCA16</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5386C29C23397D6A1E27017E0EDC11CF</string>
+			<string>6652F3996125C0587EEC6BCD582B1684</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -206,7 +163,7 @@
 		<key>10DA04EC085D11D23E0E3F0DBABE5114</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9B68E6F8B8144A9081AE0A00FC2089C4</string>
+			<string>79ED72FDD545E3A3A7826A6762B405E4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -220,20 +177,9 @@
 		<key>112A4FB2ECD2A55F39EDA4928D2ACA9D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A242999BD504BFD8B6B0D959D145E893</string>
+			<string>EEAAFC76D216EE891C2EFE80AE31DAE5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>131B3EEC049C55853C913792C5BF1451</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>LTMorphingLabel.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>14B8B9B15ECBE87983FF987239AB2D7B</key>
 		<dict>
@@ -248,25 +194,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>16201489182904072C460C4DA8C83A18</key>
+		<key>17270BFECC1395A193C8ADC5C48EC570</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>LTMorphingLabel+Sparkle.swift</string>
+			<string>FUIPopoverBackgroundView.m</string>
 			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel+Sparkle.swift</string>
+			<string>Classes/ios/FUIPopoverBackgroundView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1768B9615B6D6518F559FA5355AE3C7E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4062799BE4083E635A018FC7B484158F</string>
+			<string>C237A64FDE7FDA4E8AB4A1FEB507425E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -284,7 +230,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>19EEC9D5DD9EA5127AA8A0DAF0F90792</key>
+		<key>18BECC624361460416FB9EF4B0154FBB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -293,16 +239,31 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>UIProgressView+FlatUI.h</string>
+			<string>UIBarButtonItem+FlatUI.h</string>
 			<key>path</key>
-			<string>Classes/ios/UIProgressView+FlatUI.h</string>
+			<string>Classes/ios/UIBarButtonItem+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18CCF76E644029FEA66D6CB458CA47F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIToolbar+FlatUI.m</string>
+			<key>path</key>
+			<string>Classes/ios/UIToolbar+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1A1996C93383A3C703E7DA5BC59F0FDB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>226E829564DD43B50249E26A88AFCC83</string>
+			<string>8FDDE304183E087E9E315F8DBDA51CD9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -321,10 +282,23 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>1AA4ECDF3F6BBA476E9C155832A4082B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Fabric.framework</string>
+			<key>path</key>
+			<string>iOS/Fabric.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>1B8D06F57ABB9C73800ED039173E80A2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>03CE88C8A2C0FD9FFD067EBA1499506A</string>
+			<string>D0E378A9EB1AAEDFDBAB992A32470DEE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -335,62 +309,32 @@
 				</array>
 			</dict>
 		</dict>
-		<key>1C99A87C814B47CE2821248083892F58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UINavigationBar+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UINavigationBar+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CF7728BA8B2AB7203A10C80E63A0649</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FUISwitch.m</string>
-			<key>path</key>
-			<string>Classes/ios/FUISwitch.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>1CF8DFA896A6618005B677B8793DBF0E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>52630F3937457C808FF8B6C4D3B1AF7A</string>
+			<string>22AA2764451AB1DC9041FD8C3B549EE3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>1DF65840D90E7CA62D475C373BD338A1</key>
+		<key>1E44B01E4C39E6179D9FC79C8749A648</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>NSString+Icons.m</string>
+			<string>FUISwitch.h</string>
 			<key>path</key>
-			<string>Classes/ios/NSString+Icons.m</string>
+			<string>Classes/ios/FUISwitch.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1F01150CCF0FBD91A951A60C457623EC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>ED8D054CE0E4AA5512CBC26410040A4C</string>
+			<string>6C3944D5B46E4C49C9CEE078FB3D46F8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -431,23 +375,25 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>1FC748C08E4DFCA8B47E1BDA823C0A0C</key>
+		<key>1FFEBB7C8C637E6A0839E7D7BDBF8625</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Smoke.png</string>
+			<string>FUISwitch.m</string>
 			<key>path</key>
-			<string>LTMorphingLabel/Particles/Smoke.png</string>
+			<string>Classes/ios/FUISwitch.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>201742A2D20350811849AC7E279D89C1</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EB7CDA06EB9A5644FD54BF6AD303A838</string>
+			<string>99A2573845B542A4266F0556B983F2DC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -461,26 +407,39 @@
 		<key>20210326E14FAA2C05DEC09A2C822462</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C19371A086367064D47E3DCAE0296049</string>
+			<string>D0A670EFD6D38816E9B9A1F9BA809BF4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2114AF9E9186F40744DD5B0429A3E5A4</key>
+		<key>20DBE1C6CB49B49BB0D0F809C2518318</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DB64E6205E3BDA1B40B79D96E181D29C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>21785EBEFB1A409C8412BFC9B8FBFF46</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>UIToolbar+FlatUI.m</string>
+			<string>NSString+LTMorphingLabel.swift</string>
 			<key>path</key>
-			<string>Classes/ios/UIToolbar+FlatUI.m</string>
+			<string>LTMorphingLabel/NSString+LTMorphingLabel.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2246D299D840C4F46CAD28F2A1DFFF90</key>
+		<key>2200949E9117A951C5AB22B2093B4D96</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -488,21 +447,51 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIPopoverController+FlatUI.h</string>
 			<key>path</key>
-			<string>LTMorphingLabel-prefix.pch</string>
+			<string>Classes/ios/UIPopoverController+FlatUI.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>226E829564DD43B50249E26A88AFCC83</key>
+		<key>22AA2764451AB1DC9041FD8C3B549EE3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>flat-ui-icons-regular.ttf</string>
+			<string>Fire.png</string>
 			<key>path</key>
-			<string>Resources/flat-ui-icons-regular.ttf</string>
+			<string>LTMorphingLabel/Particles/Fire.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23CFC7C1139E61E530E29E0E711C7F27</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Regular.ttf</string>
+			<key>path</key>
+			<string>Resources/Lato-Regular.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2407BFCF3DF6A07FECA92F31235255F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIToolbar+FlatUI.h</string>
+			<key>path</key>
+			<string>Classes/ios/UIToolbar+FlatUI.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -530,10 +519,38 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>25B777C08854F95CFC7AF0AA46FC4462</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29D75469521C0FE1E2AE48F663B4909C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LTMorphingEffect.swift</string>
+			<key>path</key>
+			<string>LTMorphingLabel/LTMorphingEffect.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>2A1E59654B89E214A131F4AA82B8741A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EF327667397879B0F5A580BB0363D026</string>
+			<string>2200949E9117A951C5AB22B2093B4D96</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -547,7 +564,7 @@
 		<key>2A20DD6FD5B9EA1CB9D7D33AD25F6990</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D8020627B686B53F798627C8655F0FE1</string>
+			<string>4B2D2A2AF270F69ED665FBC699592E14</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -557,6 +574,21 @@
 			<string>1F739FE555EE60EA97D931E3EB72A43C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>2D31343721775835F04C07961533B05F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LTMorphingLabel.swift</string>
+			<key>path</key>
+			<string>LTMorphingLabel/LTMorphingLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -582,7 +614,7 @@
 		<key>2ECF841EB016889D3AF3A8615708FB37</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3ADE97CE953FFB02E15DD019AE33B638</string>
+			<string>4CB066DB1ED04739D9F5A9A19365451F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -596,14 +628,14 @@
 		<key>2EF4E8B5DA06CF8CF7E4C7437C04390A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2114AF9E9186F40744DD5B0429A3E5A4</string>
+			<string>18CCF76E644029FEA66D6CB458CA47F5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>2FA3641B2811D21FFBC3732564E11BD9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C548FF1F795249F10A3E524D4E66524D</string>
+			<string>440E126177C0CA79513F36F3B39AC11E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -614,17 +646,32 @@
 				</array>
 			</dict>
 		</dict>
+		<key>2FA6AF62F39D7F716F0EEB0DA5658B5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIProgressView+FlatUI.h</string>
+			<key>path</key>
+			<string>Classes/ios/UIProgressView+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>2FD368C3F18F5F6AFAE5D2C1166D28F3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4D1C5CD55CE931D10A3D8EC638763681</string>
+			<string>B3D8861698589F07151D8152DCECC581</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>30686CFDA8810EA3FD79C81676D8BEE4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3B25CB9220619246DF307A37400C34DB</string>
+			<string>1E44B01E4C39E6179D9FC79C8749A648</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -635,25 +682,29 @@
 				</array>
 			</dict>
 		</dict>
-		<key>35D1068A16F7B860DBF2FF11F7E88197</key>
+		<key>34966747CABABC8F66329DF0E2F8B779</key>
 		<dict>
-			<key>fileRef</key>
-			<string>868F0DE5EA9828D1B50BF2DF367C5075</string>
+			<key>children</key>
+			<array>
+				<string>20DBE1C6CB49B49BB0D0F809C2518318</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>35E240F67B86CA0131145AE1E687875C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Crashlytics</string>
 			<key>path</key>
-			<string>FlatUIKit.modulemap</string>
+			<string>Crashlytics</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>37C99AF3DB6FA804A3EC62631544574C</key>
+		<key>35D1068A16F7B860DBF2FF11F7E88197</key>
+		<dict>
+			<key>fileRef</key>
+			<string>29D75469521C0FE1E2AE48F663B4909C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B50B2CBFAE93003A7CCBE890354B61B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -662,46 +713,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LTMorphingLabel+Pixelate.swift</string>
+			<string>LTMorphingLabel+Evaporate.swift</string>
 			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel+Pixelate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3ADE97CE953FFB02E15DD019AE33B638</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+Icons.h</string>
-			<key>path</key>
-			<string>Classes/ios/NSString+Icons.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B25CB9220619246DF307A37400C34DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FUISwitch.h</string>
-			<key>path</key>
-			<string>Classes/ios/FUISwitch.h</string>
+			<string>LTMorphingLabel/LTMorphingLabel+Evaporate.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3BEC156281D69151048A9799FB68580A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B8866BAA8F25094E0613BFE176BC2DF0</string>
+			<string>8703FAE72C182D5EBD1A9AA3D340DE86</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -715,7 +736,7 @@
 		<key>3C993E9055C907D131B70A13725FCBD2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>629D6CFC41DF3E8FD1E4FF2B093BC837</string>
+			<string>9067EF9995907455F0706E920107C14C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -726,29 +747,57 @@
 				</array>
 			</dict>
 		</dict>
-		<key>3F91CB623F1177D9668122E3D98BEDAC</key>
+		<key>3EF434F74E43C216E81F24570138AB66</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>630CC1B013C41F05EE0E56192F0F5801</string>
+				<string>DD988EC22DE1420F1AEB060B3B190592</string>
+				<string>B5B3E092ED019FE421FE03EAEB31C897</string>
+				<string>29D75469521C0FE1E2AE48F663B4909C</string>
+				<string>79ED72FDD545E3A3A7826A6762B405E4</string>
+				<string>2D31343721775835F04C07961533B05F</string>
+				<string>EAB8E1033E4278017BFBE4C08A16E636</string>
+				<string>FC04B7E4C0ABC1BC6F824CECB4CE7935</string>
+				<string>3B50B2CBFAE93003A7CCBE890354B61B</string>
+				<string>BAE3CB9EBB9FD6C59910BCAF5B1A0146</string>
+				<string>A1B5477AFAB0E0775095A6C20B275906</string>
+				<string>E9F7389B2587AD51B4900B96F978CB47</string>
+				<string>21785EBEFB1A409C8412BFC9B8FBFF46</string>
+				<string>D9886E43061E39735F6CE68DA46AF334</string>
+				<string>B3D690117B6184D6FCE0B5C82441132A</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>NSString+LTMorphingLabel.swift</string>
+			<string>LTMorphingLabel</string>
 			<key>path</key>
-			<string>LTMorphingLabel/NSString+LTMorphingLabel.swift</string>
+			<string>LTMorphingLabel</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>401A7DAFE42E4A8D8B065ABB2B5028D1</key>
 		<dict>
 			<key>fileRef</key>
-			<string>16201489182904072C460C4DA8C83A18</string>
+			<string>E9F7389B2587AD51B4900B96F978CB47</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>4062799BE4083E635A018FC7B484158F</key>
+		<key>420E5F12AB7FC7093F055D7B3EEE0595</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9FDE4C3167F7E9D144CCB39B0F658B2C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>440E126177C0CA79513F36F3B39AC11E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -757,30 +806,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>FUICellBackgroundView.h</string>
+			<string>UIColor+FlatUI.h</string>
 			<key>path</key>
-			<string>Classes/ios/FUICellBackgroundView.h</string>
+			<string>Classes/ios/UIColor+FlatUI.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>420E5F12AB7FC7093F055D7B3EEE0595</key>
-		<dict>
-			<key>fileRef</key>
-			<string>89181B0F50A823C7A1225575930C39B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>48303E0C3327C7EB6FAF609E6B42387E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D865594D168AF494FFC5DD0902D41C65</string>
+			<string>DC722953D14B6AF7C2AA3A951CAC738B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -791,17 +826,30 @@
 				</array>
 			</dict>
 		</dict>
+		<key>4B2D2A2AF270F69ED665FBC699592E14</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Italic.ttf</string>
+			<key>path</key>
+			<string>Resources/Lato-Italic.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4BDFF6BEA49BDB9DBB4E06E17868248D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9946923290820230DBC5DB77DE05E44E</string>
+			<string>65270B1C7F8BD0D276616F939BA5B64E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>4C7AD94E808BD9CC27A7366CB1A355A4</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>9EADB49E6D5598A093D5E53FD6EF07AF</string>
+			<string>77E9A8DFDDE4ABDDB065D8081CE619BA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -854,7 +902,22 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>4D1C5CD55CE931D10A3D8EC638763681</key>
+		<key>4CB066DB1ED04739D9F5A9A19365451F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSString+Icons.h</string>
+			<key>path</key>
+			<string>Classes/ios/NSString+Icons.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F0ABF19AF04C3E30D7610D0F757B931</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -863,22 +926,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>FUICellBackgroundView.m</string>
+			<string>FUIButton.m</string>
 			<key>path</key>
-			<string>Classes/ios/FUICellBackgroundView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>52630F3937457C808FF8B6C4D3B1AF7A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Fire.png</string>
-			<key>path</key>
-			<string>LTMorphingLabel/Particles/Fire.png</string>
+			<string>Classes/ios/FUIButton.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -910,6 +960,19 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
+		<key>53298FD22E60626425D15791FE2FE706</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Light.ttf</string>
+			<key>path</key>
+			<string>Resources/Lato-Light.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>536009EF9F2286551E975C1AF347ADF6</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -923,32 +986,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5386C29C23397D6A1E27017E0EDC11CF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FUIButton.h</string>
-			<key>path</key>
-			<string>Classes/ios/FUIButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>561FDB72BA8B61417BC0109D57FB53DD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5A30604EF95D72D8AEB94D35550F8462</string>
+			<string>DF9E1EBEE6DF7EC821DCACF5744A6CF1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>5638E8C1AC3D36348BF52B821A63184E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9700C00930D7EC058169909BB283C849</string>
+			<string>9A849B4EC552ABD0A8BC5436CCF7866B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -962,7 +1010,7 @@
 		<key>568C8BDDD66B058082AF681BC78BCC55</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>9EADB49E6D5598A093D5E53FD6EF07AF</string>
+			<string>77E9A8DFDDE4ABDDB065D8081CE619BA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1018,36 +1066,16 @@
 		<key>56C20D36C1BE8A7DAE8498DA7D73F8F7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7DD8B8ABE73D50B0C2D981083FFB8225</string>
+			<string>4F0ABF19AF04C3E30D7610D0F757B931</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>573B13ABBF79FA6ABDACA8F14750D83F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>01665726C5B5A005BF2B41EDAF0E21B0</string>
+			<string>7BEE66226A435E5531A6F738D8EBABDD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>58861CF4F0904DC75CAB5D4CA44D6C9D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>35E240F67B86CA0131145AE1E687875C</string>
-				<string>9EADB49E6D5598A093D5E53FD6EF07AF</string>
-				<string>9946923290820230DBC5DB77DE05E44E</string>
-				<string>A6A82AC6AFCE976E08B1989EE65F367A</string>
-				<string>F940A2D430F9D295E5A8C40C50C4F436</string>
-				<string>A66CEF836EF01E646EDFED1CECB2015B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/FlatUIKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>594CFC8A9F6C2AE6847C2E009F736D85</key>
 		<dict>
@@ -1062,40 +1090,28 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>59D4F265F3E240DEEC7EA19E0E355801</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LTEmitterView.swift</string>
-			<key>path</key>
-			<string>LTMorphingLabel/LTEmitterView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5A30604EF95D72D8AEB94D35550F8462</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Lato-Bold.ttf</string>
-			<key>path</key>
-			<string>Resources/Lato-Bold.ttf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>5AF0906E3CC401EF05B9E306B3EFD499</key>
 		<dict>
 			<key>fileRef</key>
-			<string>99B2523B6BADE63AFB3562837A2C7907</string>
+			<string>80265FD27406F3FAC75E67EA743DD890</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>5B7F487B86A2B0658C6EBB408BECD034</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>34966747CABABC8F66329DF0E2F8B779</string>
+				<string>ED80FAA6747C58B7E7807F04EEF25125</string>
+				<string>DCB67A1030446CE45CB5110045918208</string>
+				<string>3EF434F74E43C216E81F24570138AB66</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5CB41E08C42F7942E21B0F7E2FDDD340</key>
 		<dict>
@@ -1148,67 +1164,53 @@
 		<key>5F072C98A3888CDCE924B1E0AE6CE025</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D92658557F3C1C7E50C78445B57CE712</string>
+			<string>B4EBCE44FAB4423300E70B111A0A2900</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>5F2F9A38D20F0DA3A1216644C2FCE99F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6DECB00526474680EDDBA8F929E11D84</string>
+			<string>B9019CF0EF9DF67CFFFA0089DB53D25A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>5F95FBCA87C51F10EAEEA061E1DDBC7F</key>
+		<key>5F7C1C243C194C4261DD4B6A5AB369BF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8FDDE304183E087E9E315F8DBDA51CD9</string>
+				<string>DF9E1EBEE6DF7EC821DCACF5744A6CF1</string>
+				<string>4B2D2A2AF270F69ED665FBC699592E14</string>
+				<string>53298FD22E60626425D15791FE2FE706</string>
+				<string>23CFC7C1139E61E530E29E0E711C7F27</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5FF009165A8C2146E11DEDD47BB5E549</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FUITextField.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Classes/ios/FUITextField.h</string>
+			<string>LTMorphingLabel-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6047CAC2349B1C186BA37A51DE790C9E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>742BB05E7A3BE676C336430D1E00A439</string>
+			<string>23CFC7C1139E61E530E29E0E711C7F27</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>6208FA198094315A730C0C3F84FE3636</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LTMorphingLabel+Evaporate.swift</string>
-			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel+Evaporate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>62371BA2041F9F44967582C6813C93D5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A8743F00A584009963F0E5F606145D10</string>
-				<string>E432A61E75706E8F4BE9E56C3B5E10FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>62821F4D42C187B437988C64DBA6E0C8</key>
 		<dict>
@@ -1217,7 +1219,29 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>629D6CFC41DF3E8FD1E4FF2B093BC837</key>
+		<key>630CC1B013C41F05EE0E56192F0F5801</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LTCharacterLimbo.swift</string>
+			<key>path</key>
+			<string>LTMorphingLabel/LTCharacterLimbo.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6385A4FCE4594DB3C4C0AE3630B86375</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FFEBB7C8C637E6A0839E7D7BDBF8625</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63E5623D8CED8B67001C233893881A44</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1226,30 +1250,64 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>UITableViewCell+FlatUI.h</string>
+			<string>FUIPopoverBackgroundView.h</string>
 			<key>path</key>
-			<string>Classes/ios/UITableViewCell+FlatUI.h</string>
+			<string>Classes/ios/FUIPopoverBackgroundView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6385A4FCE4594DB3C4C0AE3630B86375</key>
+		<key>6442A15230366715187EB18D4C9F92B1</key>
 		<dict>
-			<key>fileRef</key>
-			<string>1CF7728BA8B2AB7203A10C80E63A0649</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FlatUIKit-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65270B1C7F8BD0D276616F939BA5B64E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FlatUIKit-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>65C63243CF9B34F40546B4773EB0F188</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9ECDEE1C0A9BD1FCE3E816EE0595BF70</string>
+			<string>88321CAB49328E9C80C9742F94029DC6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>6652F3996125C0587EEC6BCD582B1684</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUIButton.h</string>
+			<key>path</key>
+			<string>Classes/ios/FUIButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>67B70A96D6BBBB9C9DC6D7BC1BE729D6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1C99A87C814B47CE2821248083892F58</string>
+			<string>FDB7DB0C69A9B3BCECDC1EF29323318A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1282,7 +1340,7 @@
 		<key>6B4F96C280717746A98B11A1EAFD274F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8E8CD95255DF2BF71FB7DBD7E6768AD5</string>
+			<string>63E5623D8CED8B67001C233893881A44</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1293,7 +1351,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>6C3838A545745BA7BE2345FFB6E6D60E</key>
+		<key>6C3944D5B46E4C49C9CEE078FB3D46F8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1302,39 +1360,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>UIStepper+FlatUI.m</string>
+			<string>UISlider+FlatUI.m</string>
 			<key>path</key>
-			<string>Classes/ios/UIStepper+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6D10B420C6E3400F925504C6B7A71B97</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIColor+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UIColor+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6DECB00526474680EDDBA8F929E11D84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UIImage+FlatUI.m</string>
+			<string>Classes/ios/UISlider+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1351,38 +1379,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>742BB05E7A3BE676C336430D1E00A439</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Lato-Regular.ttf</string>
-			<key>path</key>
-			<string>Resources/Lato-Regular.ttf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>74A8C22F68682A93A0A042524F9A4851</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIBarButtonItem+FlatUI.h</string>
-			<key>path</key>
-			<string>Classes/ios/UIBarButtonItem+FlatUI.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>74DEC2D3601595D8C6850C8FB7173158</key>
 		<dict>
 			<key>fileRef</key>
-			<string>75F97D27DFE37CDE2BC230F461BD52B1</string>
+			<string>630CC1B013C41F05EE0E56192F0F5801</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1415,18 +1415,16 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>75F97D27DFE37CDE2BC230F461BD52B1</key>
+		<key>75D323954EE56BFC86B4E538E22864DF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LTCharacterLimbo.swift</string>
+			<string>Smoke.png</string>
 			<key>path</key>
-			<string>LTMorphingLabel/LTCharacterLimbo.swift</string>
+			<string>LTMorphingLabel/Particles/Smoke.png</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1445,10 +1443,69 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>779ADD3F692B4FE2203CB57A6B32F970</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FCD379699764D47600EF7F050361D90A</string>
+				<string>77E9A8DFDDE4ABDDB065D8081CE619BA</string>
+				<string>65270B1C7F8BD0D276616F939BA5B64E</string>
+				<string>CC9A73526554C608CB75859F7D2DD25A</string>
+				<string>6442A15230366715187EB18D4C9F92B1</string>
+				<string>94A3D6DF15DBE3A5BE36190252D3E0DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/FlatUIKit</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>77E9A8DFDDE4ABDDB065D8081CE619BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>FlatUIKit.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79ED72FDD545E3A3A7826A6762B405E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>LTMorphingLabel.h</string>
+			<key>path</key>
+			<string>LTMorphingLabel/LTMorphingLabel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7ACCE8503EB6A52B3F709E36917ED409</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LTMorphingLabel.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7AE363356D9DAF059498E982C5BD0AD9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1DF65840D90E7CA62D475C373BD338A1</string>
+			<string>8AFE77CACA21186D6355E24182B3616B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1485,16 +1542,16 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>7CF7612CA06C4776F32E8854EB81C78C</key>
+		<key>7BEE66226A435E5531A6F738D8EBABDD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Lato-Light.ttf</string>
+			<string>Sparkle.png</string>
 			<key>path</key>
-			<string>Resources/Lato-Light.ttf</string>
+			<string>LTMorphingLabel/Particles/Sparkle.png</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1504,7 +1561,7 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>14B8B9B15ECBE87983FF987239AB2D7B</string>
-				<string>62371BA2041F9F44967582C6813C93D5</string>
+				<string>5B7F487B86A2B0658C6EBB408BECD034</string>
 				<string>1A3E47F64899C3D633989603FCEE8EE7</string>
 				<string>72E4BC891CD9F0F829C17BBEA68005CB</string>
 			</array>
@@ -1513,7 +1570,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7DD8B8ABE73D50B0C2D981083FFB8225</key>
+		<key>7DE0761A5022574DA6B829A10C53708E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LTMorphingLabel-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E0811105D6A11E62A13F20CC48D31FB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1522,13 +1592,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>FUIButton.m</string>
+			<string>UIProgressView+FlatUI.m</string>
 			<key>path</key>
-			<string>Classes/ios/FUIButton.m</string>
+			<string>Classes/ios/UIProgressView+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>81927C1C048ABF730954DB06B0471943</key>
+		<key>80265FD27406F3FAC75E67EA743DD890</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIBarButtonItem+FlatUI.m</string>
+			<key>path</key>
+			<string>Classes/ios/UIBarButtonItem+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>80E50BAB07E279452A5E157AAD376616</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1537,42 +1622,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>UISlider+FlatUI.h</string>
+			<string>UIStepper+FlatUI.h</string>
 			<key>path</key>
-			<string>Classes/ios/UISlider+FlatUI.h</string>
+			<string>Classes/ios/UIStepper+FlatUI.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>82CCC01A0501720443407C7842A2F8EE</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6208FA198094315A730C0C3F84FE3636</string>
+			<string>3B50B2CBFAE93003A7CCBE890354B61B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>868F0DE5EA9828D1B50BF2DF367C5075</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LTMorphingEffect.swift</string>
-			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingEffect.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>87A5677A6AE8315FC08C7AFDA06C5E85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F0F79F1C255437BD1F0D778F7041D183</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>89181B0F50A823C7A1225575930C39B0</key>
+		<key>8703FAE72C182D5EBD1A9AA3D340DE86</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1581,29 +1644,74 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>UIFont+FlatUI.h</string>
+			<string>UITabBar+FlatUI.h</string>
 			<key>path</key>
-			<string>Classes/ios/UIFont+FlatUI.h</string>
+			<string>Classes/ios/UITabBar+FlatUI.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8BDAE50BBCC43D6C33FBF4838A53FFE1</key>
+		<key>87A5677A6AE8315FC08C7AFDA06C5E85</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>0A85E8329FD71DB4631E5A055A282BBD</string>
-				<string>131B3EEC049C55853C913792C5BF1451</string>
-				<string>F40CDDC620B1D7E5EC6A3B2C0B0F64DE</string>
-				<string>D766A45860CECC78F730838A9AD36875</string>
-				<string>2246D299D840C4F46CAD28F2A1DFFF90</string>
-				<string>F43F7607F8161874DC5FA04CAA82A051</string>
-			</array>
+			<key>fileRef</key>
+			<string>EAB8E1033E4278017BFBE4C08A16E636</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88321CAB49328E9C80C9742F94029DC6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>UIFont+FlatUI.m</string>
 			<key>path</key>
-			<string>../Target Support Files/LTMorphingLabel</string>
+			<string>Classes/ios/UIFont+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8832A72314104433CB7D28855E3BD0E5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LTMorphingLabel-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8AFE77CACA21186D6355E24182B3616B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSString+Icons.m</string>
+			<key>path</key>
+			<string>Classes/ios/NSString+Icons.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CF1B244C6015A6BE46B933B1D3A0D5D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UITableViewCell+FlatUI.m</string>
+			<key>path</key>
+			<string>Classes/ios/UITableViewCell+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1652,21 +1760,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>8E8CD95255DF2BF71FB7DBD7E6768AD5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FUIPopoverBackgroundView.h</string>
-			<key>path</key>
-			<string>Classes/ios/FUIPopoverBackgroundView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8F9EA3BE8A214EF56F8BE99074F67803</key>
 		<dict>
 			<key>children</key>
@@ -1683,12 +1776,40 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>8FDDE304183E087E9E315F8DBDA51CD9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>flat-ui-icons-regular.ttf</string>
+			<key>path</key>
+			<string>Resources/flat-ui-icons-regular.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>8FEAC9420BEA509A281B5B7A12B5E83A</key>
 		<dict>
 			<key>fileRef</key>
 			<string>68FF130F7042950E63BC7FBA441F0A6C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>9067EF9995907455F0706E920107C14C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UITableViewCell+FlatUI.h</string>
+			<key>path</key>
+			<string>Classes/ios/UITableViewCell+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>92E69E6A818134C5C54B22D1385F2F4D</key>
 		<dict>
@@ -1731,34 +1852,30 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>94AD6293F4C9EBE6053423CD8C3EB06E</key>
+		<key>94A3D6DF15DBE3A5BE36190252D3E0DD</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>226E829564DD43B50249E26A88AFCC83</string>
-				<string>5A30604EF95D72D8AEB94D35550F8462</string>
-				<string>D8020627B686B53F798627C8655F0FE1</string>
-				<string>7CF7612CA06C4776F32E8854EB81C78C</string>
-				<string>742BB05E7A3BE676C336430D1E00A439</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>94C184FAE53AE7FE2DAAF71250C88399</key>
 		<dict>
 			<key>fileRef</key>
-			<string>59D4F265F3E240DEEC7EA19E0E355801</string>
+			<string>B5B3E092ED019FE421FE03EAEB31C897</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>96B8E925EA9DD5D8394039CB6E187FAA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0145EF4D5E07B2ED2A3538D8E1CFC4FA</string>
+			<string>80E50BAB07E279452A5E157AAD376616</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1769,7 +1886,43 @@
 				</array>
 			</dict>
 		</dict>
-		<key>9700C00930D7EC058169909BB283C849</key>
+		<key>97C1D50670F0A109D5533CD3B1A3F6BF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E3BB1433BBDA241A51E3EF58AB1E77E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9953A1F6E763CEED3CC4DB86C9D55845</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BA697974996337728315D9A1C781D693</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>99A2573845B542A4266F0556B983F2DC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUIAlertView.h</string>
+			<key>path</key>
+			<string>Classes/ios/FUIAlertView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9A849B4EC552ABD0A8BC5436CCF7866B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1784,70 +1937,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>97C1D50670F0A109D5533CD3B1A3F6BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6C3838A545745BA7BE2345FFB6E6D60E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9946923290820230DBC5DB77DE05E44E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FlatUIKit-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9953A1F6E763CEED3CC4DB86C9D55845</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81927C1C048ABF730954DB06B0471943</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>99B2523B6BADE63AFB3562837A2C7907</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIBarButtonItem+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UIBarButtonItem+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9B68E6F8B8144A9081AE0A00FC2089C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>LTMorphingLabel.h</string>
-			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>9B7F69D9338EA426ABD122D1582FC815</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1859,7 +1948,49 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9C8985005F86E3AB9115F0A7076D0013</key>
+		<key>9CD2F676F12CF59997D469DC44040977</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD988EC22DE1420F1AEB060B3B190592</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9F88658639EB46598906354CE8A124AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Fragment.png</string>
+			<key>path</key>
+			<string>LTMorphingLabel/Particles/Fragment.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FDE4C3167F7E9D144CCB39B0F658B2C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIFont+FlatUI.h</string>
+			<key>path</key>
+			<string>Classes/ios/UIFont+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A1818D9416A84341F98AFC7AF54565DC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0A37855C0D6882135AEBFF5D20D1AA0E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A1B5477AFAB0E0775095A6C20B275906</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1868,73 +1999,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LTMorphingLabel+Burn.swift</string>
+			<string>LTMorphingLabel+Pixelate.swift</string>
 			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel+Burn.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9CD2F676F12CF59997D469DC44040977</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC815847BD591A9A94E1A87BC40AE98D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9EADB49E6D5598A093D5E53FD6EF07AF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>FlatUIKit.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9ECDEE1C0A9BD1FCE3E816EE0595BF70</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIFont+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UIFont+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1818D9416A84341F98AFC7AF54565DC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6D10B420C6E3400F925504C6B7A71B97</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A242999BD504BFD8B6B0D959D145E893</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FUIAlertView.m</string>
-			<key>path</key>
-			<string>Classes/ios/FUIAlertView.m</string>
+			<string>LTMorphingLabel/LTMorphingLabel+Pixelate.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A301B8F6BC707D768D1BA401B66CA18A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D6F4555876754A9A5CC97D09B2056504</string>
+			<string>A45EAD690E4F7145C372FBC746EA11EE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1948,24 +2022,11 @@
 		<key>A3856F999C2EBB1F3A28359DD1F9C49A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>01DF077E87A0CC38C64DD5F445CBDC78</string>
+			<string>E4BBB31E7815432B419ACFA5A96C57A6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>A66CEF836EF01E646EDFED1CECB2015B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A6A82AC6AFCE976E08B1989EE65F367A</key>
+		<key>A45EAD690E4F7145C372FBC746EA11EE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1973,8 +2034,10 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUISegmentedControl.h</string>
 			<key>path</key>
-			<string>FlatUIKit-prefix.pch</string>
+			<string>Classes/ios/FUISegmentedControl.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2051,63 +2114,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>A8743F00A584009963F0E5F606145D10</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9700C00930D7EC058169909BB283C849</string>
-				<string>EB7CDA06EB9A5644FD54BF6AD303A838</string>
-				<string>A242999BD504BFD8B6B0D959D145E893</string>
-				<string>5386C29C23397D6A1E27017E0EDC11CF</string>
-				<string>7DD8B8ABE73D50B0C2D981083FFB8225</string>
-				<string>4062799BE4083E635A018FC7B484158F</string>
-				<string>4D1C5CD55CE931D10A3D8EC638763681</string>
-				<string>8E8CD95255DF2BF71FB7DBD7E6768AD5</string>
-				<string>C417F2C1333707853525C09CE49B6B74</string>
-				<string>D6F4555876754A9A5CC97D09B2056504</string>
-				<string>ECC774EC7D54ECB5B2D4437C1EFF530E</string>
-				<string>3B25CB9220619246DF307A37400C34DB</string>
-				<string>1CF7728BA8B2AB7203A10C80E63A0649</string>
-				<string>5F95FBCA87C51F10EAEEA061E1DDBC7F</string>
-				<string>C19371A086367064D47E3DCAE0296049</string>
-				<string>3ADE97CE953FFB02E15DD019AE33B638</string>
-				<string>1DF65840D90E7CA62D475C373BD338A1</string>
-				<string>74A8C22F68682A93A0A042524F9A4851</string>
-				<string>99B2523B6BADE63AFB3562837A2C7907</string>
-				<string>C548FF1F795249F10A3E524D4E66524D</string>
-				<string>6D10B420C6E3400F925504C6B7A71B97</string>
-				<string>89181B0F50A823C7A1225575930C39B0</string>
-				<string>9ECDEE1C0A9BD1FCE3E816EE0595BF70</string>
-				<string>D865594D168AF494FFC5DD0902D41C65</string>
-				<string>6DECB00526474680EDDBA8F929E11D84</string>
-				<string>03CE88C8A2C0FD9FFD067EBA1499506A</string>
-				<string>1C99A87C814B47CE2821248083892F58</string>
-				<string>EF327667397879B0F5A580BB0363D026</string>
-				<string>01DF077E87A0CC38C64DD5F445CBDC78</string>
-				<string>19EEC9D5DD9EA5127AA8A0DAF0F90792</string>
-				<string>ECA0AC687C5A65D8A4C017A46A848CE5</string>
-				<string>81927C1C048ABF730954DB06B0471943</string>
-				<string>ED8D054CE0E4AA5512CBC26410040A4C</string>
-				<string>0145EF4D5E07B2ED2A3538D8E1CFC4FA</string>
-				<string>6C3838A545745BA7BE2345FFB6E6D60E</string>
-				<string>B8866BAA8F25094E0613BFE176BC2DF0</string>
-				<string>D92658557F3C1C7E50C78445B57CE712</string>
-				<string>629D6CFC41DF3E8FD1E4FF2B093BC837</string>
-				<string>FB0C32BBA9F909D2A4C076572A3D985D</string>
-				<string>FFC7E3017EF7184385A1C1ED00A569BC</string>
-				<string>2114AF9E9186F40744DD5B0429A3E5A4</string>
-				<string>94AD6293F4C9EBE6053423CD8C3EB06E</string>
-				<string>58861CF4F0904DC75CAB5D4CA44D6C9D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FlatUIKit</string>
-			<key>path</key>
-			<string>FlatUIKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>A92500A4F122B06FFEE6BAD9385F871E</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -2124,7 +2130,7 @@
 		<key>ACE1EEC5A30626AE9ECC8B8D13D1BBC6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>ECA0AC687C5A65D8A4C017A46A848CE5</string>
+			<string>7E0811105D6A11E62A13F20CC48D31FB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2154,6 +2160,41 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
+		<key>B3D690117B6184D6FCE0B5C82441132A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>25B777C08854F95CFC7AF0AA46FC4462</string>
+				<string>7ACCE8503EB6A52B3F709E36917ED409</string>
+				<string>06BC07C1F017F4FD288792361E79AE3D</string>
+				<string>5FF009165A8C2146E11DEDD47BB5E549</string>
+				<string>7DE0761A5022574DA6B829A10C53708E</string>
+				<string>8832A72314104433CB7D28855E3BD0E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/LTMorphingLabel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3D8861698589F07151D8152DCECC581</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUICellBackgroundView.m</string>
+			<key>path</key>
+			<string>Classes/ios/FUICellBackgroundView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>B411AD831BA507C9F5742803D22387AF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2167,10 +2208,40 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>B4EBCE44FAB4423300E70B111A0A2900</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UITabBar+FlatUI.m</string>
+			<key>path</key>
+			<string>Classes/ios/UITabBar+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B5B3E092ED019FE421FE03EAEB31C897</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LTEmitterView.swift</string>
+			<key>path</key>
+			<string>LTMorphingLabel/LTEmitterView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>B5CE0157F1F9EB6AF6F004D818F58A3A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>ECC774EC7D54ECB5B2D4437C1EFF530E</string>
+			<string>E871012E614D2FE205F7418C0BA7442D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2188,25 +2259,25 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>B8866BAA8F25094E0613BFE176BC2DF0</key>
+		<key>B9019CF0EF9DF67CFFFA0089DB53D25A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>UITabBar+FlatUI.h</string>
+			<string>UIImage+FlatUI.m</string>
 			<key>path</key>
-			<string>Classes/ios/UITabBar+FlatUI.h</string>
+			<string>Classes/ios/UIImage+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BA25E1C4EFB2B53764E95238C01FC541</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F43F7607F8161874DC5FA04CAA82A051</string>
+			<string>8832A72314104433CB7D28855E3BD0E5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2234,10 +2305,40 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
+		<key>BA697974996337728315D9A1C781D693</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UISlider+FlatUI.h</string>
+			<key>path</key>
+			<string>Classes/ios/UISlider+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BAE3CB9EBB9FD6C59910BCAF5B1A0146</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LTMorphingLabel+Fall.swift</string>
+			<key>path</key>
+			<string>LTMorphingLabel/LTMorphingLabel+Fall.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>BCB526791EA218830B02817A425FC7B0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FB0C32BBA9F909D2A4C076572A3D985D</string>
+			<string>8CF1B244C6015A6BE46B933B1D3A0D5D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2255,56 +2356,25 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>C19371A086367064D47E3DCAE0296049</key>
+		<key>C237A64FDE7FDA4E8AB4A1FEB507425E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>FUITextField.m</string>
+			<string>FUICellBackgroundView.h</string>
 			<key>path</key>
-			<string>Classes/ios/FUITextField.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3384114A50CB5DD4436296FB395F83E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>52630F3937457C808FF8B6C4D3B1AF7A</string>
-				<string>C4AA58D5C4AE67FD01C3EB780ECAA1D7</string>
-				<string>1FC748C08E4DFCA8B47E1BDA823C0A0C</string>
-				<string>01665726C5B5A005BF2B41EDAF0E21B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C417F2C1333707853525C09CE49B6B74</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FUIPopoverBackgroundView.m</string>
-			<key>path</key>
-			<string>Classes/ios/FUIPopoverBackgroundView.m</string>
+			<string>Classes/ios/FUICellBackgroundView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C487BF47D0AEBFFB32FDA30A03F2903D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>74A8C22F68682A93A0A042524F9A4851</string>
+			<string>18BECC624361460416FB9EF4B0154FBB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2315,20 +2385,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>C4AA58D5C4AE67FD01C3EB780ECAA1D7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Fragment.png</string>
-			<key>path</key>
-			<string>LTMorphingLabel/Particles/Fragment.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C548FF1F795249F10A3E524D4E66524D</key>
+		<key>CC9A73526554C608CB75859F7D2DD25A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2336,10 +2393,8 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIColor+FlatUI.h</string>
 			<key>path</key>
-			<string>Classes/ios/UIColor+FlatUI.h</string>
+			<string>FlatUIKit-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2370,14 +2425,44 @@
 		<key>CFC6568F9625CFEDE89544D5E106EE56</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D6543878461DD758BC7CBE668DB1F8C1</string>
+			<string>BAE3CB9EBB9FD6C59910BCAF5B1A0146</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>D0A670EFD6D38816E9B9A1F9BA809BF4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUITextField.m</string>
+			<key>path</key>
+			<string>Classes/ios/FUITextField.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D0E378A9EB1AAEDFDBAB992A32470DEE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UINavigationBar+FlatUI.h</string>
+			<key>path</key>
+			<string>Classes/ios/UINavigationBar+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D40D84C336EB60A2349DA835277B3BB6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9C8985005F86E3AB9115F0A7076D0013</string>
+			<string>FC04B7E4C0ABC1BC6F824CECB4CE7935</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2424,72 +2509,16 @@
 		<key>D4BEFE9697D2C98014CEA515831D78EC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3F91CB623F1177D9668122E3D98BEDAC</string>
+			<string>21785EBEFB1A409C8412BFC9B8FBFF46</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>D6543878461DD758BC7CBE668DB1F8C1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LTMorphingLabel+Fall.swift</string>
-			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel+Fall.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D6F4555876754A9A5CC97D09B2056504</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FUISegmentedControl.h</string>
-			<key>path</key>
-			<string>Classes/ios/FUISegmentedControl.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D766A45860CECC78F730838A9AD36875</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LTMorphingLabel-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D7AF1C498BACC7A8145392B6E3AC91FB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>37C99AF3DB6FA804A3EC62631544574C</string>
+			<string>A1B5477AFAB0E0775095A6C20B275906</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>D8020627B686B53F798627C8655F0FE1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Lato-Italic.ttf</string>
-			<key>path</key>
-			<string>Resources/Lato-Italic.ttf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D82B999D20A683EA96D970C990A92BDD</key>
 		<dict>
@@ -2525,7 +2554,36 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>D865594D168AF494FFC5DD0902D41C65</key>
+		<key>D9886E43061E39735F6CE68DA46AF334</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>22AA2764451AB1DC9041FD8C3B549EE3</string>
+				<string>9F88658639EB46598906354CE8A124AC</string>
+				<string>75D323954EE56BFC86B4E538E22864DF</string>
+				<string>7BEE66226A435E5531A6F738D8EBABDD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB64E6205E3BDA1B40B79D96E181D29C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Crashlytics.framework</string>
+			<key>path</key>
+			<string>iOS/Crashlytics.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DC722953D14B6AF7C2AA3A951CAC738B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2540,25 +2598,82 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D92658557F3C1C7E50C78445B57CE712</key>
+		<key>DCB67A1030446CE45CB5110045918208</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9A849B4EC552ABD0A8BC5436CCF7866B</string>
+				<string>99A2573845B542A4266F0556B983F2DC</string>
+				<string>EEAAFC76D216EE891C2EFE80AE31DAE5</string>
+				<string>6652F3996125C0587EEC6BCD582B1684</string>
+				<string>4F0ABF19AF04C3E30D7610D0F757B931</string>
+				<string>C237A64FDE7FDA4E8AB4A1FEB507425E</string>
+				<string>B3D8861698589F07151D8152DCECC581</string>
+				<string>63E5623D8CED8B67001C233893881A44</string>
+				<string>17270BFECC1395A193C8ADC5C48EC570</string>
+				<string>A45EAD690E4F7145C372FBC746EA11EE</string>
+				<string>E871012E614D2FE205F7418C0BA7442D</string>
+				<string>1E44B01E4C39E6179D9FC79C8749A648</string>
+				<string>1FFEBB7C8C637E6A0839E7D7BDBF8625</string>
+				<string>DEA2F532C1D0704350C21596843651CA</string>
+				<string>D0A670EFD6D38816E9B9A1F9BA809BF4</string>
+				<string>4CB066DB1ED04739D9F5A9A19365451F</string>
+				<string>8AFE77CACA21186D6355E24182B3616B</string>
+				<string>18BECC624361460416FB9EF4B0154FBB</string>
+				<string>80265FD27406F3FAC75E67EA743DD890</string>
+				<string>440E126177C0CA79513F36F3B39AC11E</string>
+				<string>0A37855C0D6882135AEBFF5D20D1AA0E</string>
+				<string>9FDE4C3167F7E9D144CCB39B0F658B2C</string>
+				<string>88321CAB49328E9C80C9742F94029DC6</string>
+				<string>DC722953D14B6AF7C2AA3A951CAC738B</string>
+				<string>B9019CF0EF9DF67CFFFA0089DB53D25A</string>
+				<string>D0E378A9EB1AAEDFDBAB992A32470DEE</string>
+				<string>FDB7DB0C69A9B3BCECDC1EF29323318A</string>
+				<string>2200949E9117A951C5AB22B2093B4D96</string>
+				<string>E4BBB31E7815432B419ACFA5A96C57A6</string>
+				<string>2FA6AF62F39D7F716F0EEB0DA5658B5B</string>
+				<string>7E0811105D6A11E62A13F20CC48D31FB</string>
+				<string>BA697974996337728315D9A1C781D693</string>
+				<string>6C3944D5B46E4C49C9CEE078FB3D46F8</string>
+				<string>80E50BAB07E279452A5E157AAD376616</string>
+				<string>E3BB1433BBDA241A51E3EF58AB1E77E8</string>
+				<string>8703FAE72C182D5EBD1A9AA3D340DE86</string>
+				<string>B4EBCE44FAB4423300E70B111A0A2900</string>
+				<string>9067EF9995907455F0706E920107C14C</string>
+				<string>8CF1B244C6015A6BE46B933B1D3A0D5D</string>
+				<string>2407BFCF3DF6A07FECA92F31235255F5</string>
+				<string>18CCF76E644029FEA66D6CB458CA47F5</string>
+				<string>5F7C1C243C194C4261DD4B6A5AB369BF</string>
+				<string>779ADD3F692B4FE2203CB57A6B32F970</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FlatUIKit</string>
+			<key>path</key>
+			<string>FlatUIKit</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DD988EC22DE1420F1AEB060B3B190592</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>UITabBar+FlatUI.m</string>
+			<string>LTEasing.swift</string>
 			<key>path</key>
-			<string>Classes/ios/UITabBar+FlatUI.m</string>
+			<string>LTMorphingLabel/LTEasing.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DE88AADD6CDD355FDEF74226741ADA01</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FFC7E3017EF7184385A1C1ED00A569BC</string>
+			<string>2407BFCF3DF6A07FECA92F31235255F5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2568,6 +2683,47 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>DEA2F532C1D0704350C21596843651CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUITextField.h</string>
+			<key>path</key>
+			<string>Classes/ios/FUITextField.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF9E1EBEE6DF7EC821DCACF5744A6CF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Bold.ttf</string>
+			<key>path</key>
+			<string>Resources/Lato-Bold.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFF96B2CE4E6746D90CC49BF71BC5525</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1AA4ECDF3F6BBA476E9C155832A4082B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E1DEC3B040452E6F4775CA76C61819BB</key>
 		<dict>
@@ -2582,46 +2738,47 @@
 			<key>remoteInfo</key>
 			<string>FlatUIKit</string>
 		</dict>
-		<key>E432A61E75706E8F4BE9E56C3B5E10FD</key>
+		<key>E3BB1433BBDA241A51E3EF58AB1E77E8</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>75F97D27DFE37CDE2BC230F461BD52B1</string>
-				<string>EC815847BD591A9A94E1A87BC40AE98D</string>
-				<string>59D4F265F3E240DEEC7EA19E0E355801</string>
-				<string>868F0DE5EA9828D1B50BF2DF367C5075</string>
-				<string>9B68E6F8B8144A9081AE0A00FC2089C4</string>
-				<string>F5B03110E712D3F4499170DE3CA9CFFD</string>
-				<string>F0F79F1C255437BD1F0D778F7041D183</string>
-				<string>9C8985005F86E3AB9115F0A7076D0013</string>
-				<string>6208FA198094315A730C0C3F84FE3636</string>
-				<string>D6543878461DD758BC7CBE668DB1F8C1</string>
-				<string>37C99AF3DB6FA804A3EC62631544574C</string>
-				<string>16201489182904072C460C4DA8C83A18</string>
-				<string>3F91CB623F1177D9668122E3D98BEDAC</string>
-				<string>C3384114A50CB5DD4436296FB395F83E</string>
-				<string>8BDAE50BBCC43D6C33FBF4838A53FFE1</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>LTMorphingLabel</string>
+			<string>UIStepper+FlatUI.m</string>
 			<key>path</key>
-			<string>LTMorphingLabel</string>
+			<string>Classes/ios/UIStepper+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E4BBB31E7815432B419ACFA5A96C57A6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIPopoverController+FlatUI.m</string>
+			<key>path</key>
+			<string>Classes/ios/UIPopoverController+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E64E0DA42FF43A0CE84FC8E07BA9C2F4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1FC748C08E4DFCA8B47E1BDA823C0A0C</string>
+			<string>75D323954EE56BFC86B4E538E22864DF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>E7A0DF07BEE9186EAA58D701552BEBE0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>19EEC9D5DD9EA5127AA8A0DAF0F90792</string>
+			<string>2FA6AF62F39D7F716F0EEB0DA5658B5B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2631,6 +2788,36 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>E871012E614D2FE205F7418C0BA7442D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUISegmentedControl.m</string>
+			<key>path</key>
+			<string>Classes/ios/FUISegmentedControl.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9F7389B2587AD51B4900B96F978CB47</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LTMorphingLabel+Sparkle.swift</string>
+			<key>path</key>
+			<string>LTMorphingLabel/LTMorphingLabel+Sparkle.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>EA57AF4B727F6FABD30A26C5455E43DB</key>
 		<dict>
@@ -2758,22 +2945,7 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>EB7CDA06EB9A5644FD54BF6AD303A838</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FUIAlertView.h</string>
-			<key>path</key>
-			<string>Classes/ios/FUIAlertView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EC815847BD591A9A94E1A87BC40AE98D</key>
+		<key>EAB8E1033E4278017BFBE4C08A16E636</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2782,9 +2954,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>LTEasing.swift</string>
+			<string>LTMorphingLabel+Anvil.swift</string>
 			<key>path</key>
-			<string>LTMorphingLabel/LTEasing.swift</string>
+			<string>LTMorphingLabel/LTMorphingLabel+Anvil.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2813,7 +2985,22 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>ECA0AC687C5A65D8A4C017A46A848CE5</key>
+		<key>ED80FAA6747C58B7E7807F04EEF25125</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DFF96B2CE4E6746D90CC49BF71BC5525</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Fabric</string>
+			<key>path</key>
+			<string>Fabric</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EEAAFC76D216EE891C2EFE80AE31DAE5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2822,61 +3009,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>UIProgressView+FlatUI.m</string>
+			<string>FUIAlertView.m</string>
 			<key>path</key>
-			<string>Classes/ios/UIProgressView+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ECC774EC7D54ECB5B2D4437C1EFF530E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FUISegmentedControl.m</string>
-			<key>path</key>
-			<string>Classes/ios/FUISegmentedControl.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED8D054CE0E4AA5512CBC26410040A4C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UISlider+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UISlider+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF327667397879B0F5A580BB0363D026</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIPopoverController+FlatUI.h</string>
-			<key>path</key>
-			<string>Classes/ios/UIPopoverController+FlatUI.h</string>
+			<string>Classes/ios/FUIAlertView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>EF479ABEEE6F16D8B37197AA22C70A02</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C417F2C1333707853525C09CE49B6B74</string>
+			<string>17270BFECC1395A193C8ADC5C48EC570</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2900,73 +3042,17 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>F0F79F1C255437BD1F0D778F7041D183</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LTMorphingLabel+Anvil.swift</string>
-			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel+Anvil.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>F2FA2A4CAE1467E990B61BA78254E651</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7CF7612CA06C4776F32E8854EB81C78C</string>
+			<string>53298FD22E60626425D15791FE2FE706</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>F40CDDC620B1D7E5EC6A3B2C0B0F64DE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>LTMorphingLabel.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F43F7607F8161874DC5FA04CAA82A051</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LTMorphingLabel-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F5B03110E712D3F4499170DE3CA9CFFD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>LTMorphingLabel.swift</string>
-			<key>path</key>
-			<string>LTMorphingLabel/LTMorphingLabel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F68E1617982B46FC28878D984A9734E0</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>F40CDDC620B1D7E5EC6A3B2C0B0F64DE</string>
+			<string>06BC07C1F017F4FD288792361E79AE3D</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -3024,7 +3110,7 @@
 		<key>F7FB328784EAEF27C8EF2FB3A90DB227</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>F40CDDC620B1D7E5EC6A3B2C0B0F64DE</string>
+			<string>06BC07C1F017F4FD288792361E79AE3D</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -3080,7 +3166,7 @@
 		<key>F80F0C5DD55B014CBCE737C87E3E24F0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5F95FBCA87C51F10EAEEA061E1DDBC7F</string>
+			<string>DEA2F532C1D0704350C21596843651CA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3094,7 +3180,7 @@
 		<key>F888C8B955E332D7B81BA8E85F1BCC4B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F940A2D430F9D295E5A8C40C50C4F436</string>
+			<string>6442A15230366715187EB18D4C9F92B1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3104,19 +3190,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>F940A2D430F9D295E5A8C40C50C4F436</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlatUIKit-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F9DBA014C64C012FFED946DB4F6F8A87</key>
 		<dict>
@@ -3133,21 +3206,6 @@
 			<string>PBXResourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>FB0C32BBA9F909D2A4C076572A3D985D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UITableViewCell+FlatUI.m</string>
-			<key>path</key>
-			<string>Classes/ios/UITableViewCell+FlatUI.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>FB45FFD90572718D82AB9092B750F0CA</key>
 		<dict>
@@ -3217,18 +3275,44 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>FFC7E3017EF7184385A1C1ED00A569BC</key>
+		<key>FC04B7E4C0ABC1BC6F824CECB4CE7935</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>UIToolbar+FlatUI.h</string>
+			<string>LTMorphingLabel+Burn.swift</string>
 			<key>path</key>
-			<string>Classes/ios/UIToolbar+FlatUI.h</string>
+			<string>LTMorphingLabel/LTMorphingLabel+Burn.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FCD379699764D47600EF7F050361D90A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FlatUIKit.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDB7DB0C69A9B3BCECDC1EF29323318A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UINavigationBar+FlatUI.m</string>
+			<key>path</key>
+			<string>Classes/ios/UINavigationBar+FlatUI.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="harmony helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-E4-hFi">
-                                <rect key="frame" x="193" y="42" width="234" height="40.5"/>
+                                <rect key="frame" x="193" y="42" width="234" height="41"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="29"/>
                                 <color key="textColor" red="1" green="0.89803921568627454" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cr-vr-mLc">
-                                <rect key="frame" x="125" y="149.5" width="330" height="96"/>
+                                <rect key="frame" x="125" y="150" width="330" height="96"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.14901960780000001" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVM-eD-yld" customClass="FUIButton">
-                                <rect key="frame" x="141" y="284" width="128" height="43.5"/>
+                                <rect key="frame" x="141" y="284" width="128" height="44"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
                                 <state key="normal" title="Remove chord">
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-EU-HkN" customClass="FUIButton">
-                                <rect key="frame" x="316" y="283" width="128" height="43.5"/>
+                                <rect key="frame" x="316" y="283" width="128" height="44"/>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="16"/>
                                 <state key="normal" title="Add chord">
@@ -61,8 +61,8 @@
                                     <action selector="addChordToSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppl-O1-Hhe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sequence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
-                                <rect key="frame" x="125" y="340.5" width="330" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sequence" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="5" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-be-CU8">
+                                <rect key="frame" x="125" y="341" width="330" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleAspectFit" fixedFrame="YES" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicin" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QLA-gW-F7K">
-                                <rect key="frame" x="125" y="409.5" width="330" height="129"/>
+                                <rect key="frame" x="125" y="410" width="330" height="129"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.16862745100000001" green="0.23921568630000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
