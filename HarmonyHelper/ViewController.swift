@@ -22,7 +22,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  // labels
  @IBOutlet weak var sequenceLbl: UILabel!
  @IBOutlet weak var lblSubtitle: UILabel!
- @IBOutlet weak var lblMusicNote: UILabel!
  @IBOutlet weak var titleLabel: UILabel!
  // buttons
  @IBOutlet weak var btnAddChord: FUIButton!
@@ -35,23 +34,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   chordsPicker.dataSource = self;
   chordsPicker.delegate = self;
   
-  lblMusicNote.font = UIFont.fontAwesomeOfSize(15)
-  lblMusicNote.text = String.fontAwesomeIconWithName(.Music)
-  
   txtAnalysis.text = analysis_placeHolder
   sequenceLbl.text = sequence_placeHolder
 
   
-  btnAddChord.buttonColor = UIColor.turquoiseColor();
-  btnAddChord.shadowColor = UIColor.greenSeaColor();
+  btnAddChord.buttonColor = UIColor(red: 67.0/255.0, green: 72.0/255.0, blue: 77.0/255.0, alpha: 1.0)
+  btnAddChord.shadowColor = UIColor(red: 65.0/255.0, green: 75.0/255.0, blue: 80.0/255.0, alpha: 1.0)
   btnAddChord.shadowHeight = 3;
   btnAddChord.cornerRadius = 0;
   btnAddChord.titleLabel!.font = UIFont.boldFlatFontOfSize(16);
-  btnAddChord.setTitleColor(UIColor.cloudsColor(), forState: UIControlState.Normal);
-  btnAddChord.setTitleColor(UIColor.cloudsColor(), forState: UIControlState.Highlighted);
   
-  btnRemoveChord.buttonColor = UIColor(red: 229.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0)
-  btnRemoveChord.shadowColor = UIColor(red: 192.0/255.0, green: 58.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+  
+  btnRemoveChord.buttonColor = UIColor(red: 67.0/255.0, green: 72.0/255.0, blue: 77.0/255.0, alpha: 1.0)
+  btnRemoveChord.shadowColor = UIColor(red: 65.0/255.0, green: 75.0/255.0, blue: 80.0/255.0, alpha: 1.0)
   btnRemoveChord.shadowHeight = 3
   btnRemoveChord.cornerRadius = 0
   
@@ -84,7 +79,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   
   super.viewDidLayoutSubviews()
   titleLabel.sizeToFit()
-  lblMusicNote.sizeToFit()
   
   //TODO function to size receiving an element as parameter
   
@@ -113,6 +107,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     nextStackedYPos,
     self.chordsPicker.bounds.width,
     self.chordsPicker.bounds.height)
+   chordsPicker.backgroundColor = UIColor(red: 200.0/255.0, green: 205.0/255.0, blue: 206.0/255.0, alpha: 1.0)
    
    nextStackedYPos = nextStackedYPos + self.chordsPicker.bounds.height + air
    
@@ -146,6 +141,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     self.txtAnalysis.bounds.height)
   } else {
    let leftBound:CGFloat = 10
+   
    
    //landscape
    titleLabel.frame = CGRectMake(
