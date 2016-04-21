@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HarmonyHelper/ViewController.swift"
-            timestampString = "482161300.971581"
+            timestampString = "482949119.478407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "analyzeSequence()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HarmonyHelper/ViewController.swift"
-            timestampString = "482161300.971581"
+            timestampString = "482951416.649313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
-            landmarkName = "addChord(_:)"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "analyzeSequence()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,28 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HarmonyHelper/ViewController.swift"
-            timestampString = "482161300.971581"
+            timestampString = "482951416.649313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
-            landmarkName = "viewDidLayoutSubviews()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HarmonyHelper/Extensions.swift"
-            timestampString = "481722327.76461"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "stackMeBelowThisXCentered(_:view:air:)"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
+            landmarkName = "analyzeSequence()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HarmonyHelper/ViewController.swift"
-            timestampString = "482161300.971581"
+            timestampString = "482951416.649313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "viewDidLayoutSubviews()"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "analyzeSequence()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
