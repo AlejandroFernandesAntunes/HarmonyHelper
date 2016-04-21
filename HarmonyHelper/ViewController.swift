@@ -195,8 +195,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  
  func analyzeSequence() {
   let tones = ["C", "C#","D","D#","E", "F", "F#", "G", "G#", "A", "A#", "B"]
-  
+  var numbered = ""
   var coincidences = [String:Int]()
+  var numbered_coincidences = [String:String]()
   coincidences["C"] = 0
   coincidences["C#"] = 0
   coincidences["D"] = 0
@@ -208,15 +209,31 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   coincidences["A"] = 0
   coincidences["B"] = 0
   
+  numbered_coincidences["C"] = ""
+  numbered_coincidences["C#"] = ""
+  numbered_coincidences["D"] = ""
+  numbered_coincidences["D#"] = ""
+  numbered_coincidences["E"] = ""
+  numbered_coincidences["F"] = ""
+  numbered_coincidences["F#"] = ""
+  numbered_coincidences["G"] = ""
+  numbered_coincidences["A"] = ""
+  numbered_coincidences["B"] = ""
+  
   if (addedChords.count > 0) {
    for tone:String in tones {
     let harmonized:[String]? = harmonized_tones[tone]
     if(harmonized != nil) {
+     var index = 1
+     numbered = ""
      for grade:String in harmonized!{
       let upperAddedChords = addedChords.map { $0.uppercaseString}
       if upperAddedChords.contains(grade.uppercaseString) {
        coincidences[tone] = coincidences[tone]! + 1
+       numbered = numbered + " " + String(index)
+       numbered_coincidences[tone] = numbered
       }
+      index += 1
      }
     }
    }
@@ -225,7 +242,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   
   // The one that has the more coincidence will be the tone it's on
   let maxim = coincidences.values.maxElement()
-  var founded:String = ""
+  var founded:String = "That sequence of chords is contained in the Ionian mode of:"
+  var coincidencesTexts:[String] = []
   if(maxim == 0) {
    if(addedChords.count == 0) {
     founded = analysis_placeHolder
@@ -237,12 +255,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
    for (key, value) in coincidences {
     if (value == maxim)
     {
-     founded =  founded + " " + key
+     let grades = transalteToRomanNumerals(numbered_coincidences[key]!)
+     coincidencesTexts.append(" \(key) grades(\(grades) )")
     }
    }
-   founded = "That sequence of chords is contained in the Ionian mode of: \(founded)."
   }
-  txtAnalysis.text = founded
+  txtAnalysis.text = founded + coincidencesTexts.joinWithSeparator("; ")
+ }
+ 
+ func transalteToRomanNumerals(text: String) -> String{
+  var toReturn = text
+  toReturn = toReturn.replace("1", withString:"I")
+  toReturn = toReturn.replace("2", withString:"II")
+  toReturn = toReturn.replace("3", withString:"III")
+  toReturn = toReturn.replace("4", withString:"IV")
+  toReturn = toReturn.replace("5", withString:"V")
+  toReturn = toReturn.replace("6", withString:"VI")
+  toReturn = toReturn.replace("7", withString:"VII")
+  return toReturn
  }
  
  func addChord(newText: String) {
